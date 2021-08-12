@@ -1,0 +1,1558 @@
+# Please note that I love you for buying this plugin!
+
+replace-table-gui: true # Replaces enchantment table GUI with a custom one.
+replace-anvil-gui: true # Replaces the default anvil GUI with a custom one.
+fireworks-on-enchants: true # Launches a firework on every successful enchant. Note that these fireworks are harmful!
+
+disable-telekinesis: true
+disable-smelt: true
+# Set these two to true if you are on 1.17+! They won't work due to raw iron, raw gold, etc.
+                          # Otherwise, set to false.
+
+lang: en # Selected from below.
+
+bStats: true # A boolean indicating about bStats job.
+# Collects default bStats data and the used language.
+updater: 24 # Each X hours, an updater checks for updates. Default: 24.
+
+# This section contains the used messages.
+# They are translated to English and Russian by default, but in case you want to add your own translation,
+# you can create your own section and translate the messages, then put the section name in the "lang" section.
+# Also, if you have translated a section, it'd be neat if you sent the section pastebin in the Discord :)
+# It helps out other foreign users, and you'll be credited in the update.
+# P.S. The single quotation mark ( ' ) must be written twice (in words like can't, doesn't -> can''t, doesn''t)
+messages:
+  en:
+    no-perms: '&cInsufficient permissions!' # Called when a command was executed with a player without proper permissions.
+    no-console: '&cYou can''t use this from console!' # Called when a command was executed from console, though wasn't supposed to.
+    creating-log: '&bCreating a log...' # Called when a /log command is used.
+    log-created: '&6A log has been created in &b/plugins/UnderscoreEnchants/logfile.log/ folder.' # Called when log creation is finished.
+    couldnt-make-log: '&cCouldn''t create a log!' # Called when something went wrong while creating a log.
+
+    # Below, the enchanted names are stored.
+    # This was done so there was no potential conflicting between enchantment plugins.
+    # If some plugins by chance had the same name, it'd be changed below.
+    # They are also translatable!
+    ench-alive: "Alive"
+    ench-annoyance: "Annoyance"
+    ench-antiBlock: "Anti Block"
+    ench-battery: "Battery"
+    ench-beheading: "Beheading"
+    ench-block: "Block"
+    ench-bloodthirsty: "Bloodthirsty"
+    ench-booster: "Booster"
+    ench-bountyHunter: "Bounty Hunter"
+    ench-bugged: "Bugged"
+    ench-businessman: "Businessman"
+    ench-butchering: "Butchering"
+    ench-cannon: "Cannon"
+    ench-combo: "Combo"
+    ench-comboMode: "Combo Mode"
+    ench-configIssues: "Config Issues"
+    ench-consistency: "Consistency"
+    ench-critical: "Critical"
+    ench-desperate: "Desperate"
+    ench-dislocate: "Dislocate"
+    ench-disspeller: "Disspeller"
+    ench-doctor: "Doctor"
+    ench-dontWorryBoutFallin: "Don't Worry 'bout Fallin'"
+    ench-duckingMorning: "Ducking Morning"
+    ench-easyMode: "Easy Mode"
+    ench-enlightened: "Enlightened"
+    ench-explosive: "Explosive"
+    ench-flamethrower: "Flamethrower"
+    ench-forcefield: "Forcefield"
+    ench-friendshipIsMagic: "Friendship is Magic"
+    ench-ghast: "Ghast"
+    ench-godmode: "Godmode"
+    ench-goldenfish: "Goldenfish"
+    ench-goodPig: "Good Pig"
+    ench-grinder: "Grinder"
+    ench-guardianAngel: "Guardian Angel"
+    ench-gun: "Gun"
+    ench-hat: "Hat"
+    ench-ignition: "Ignition"
+    ench-introvert: "Introvert"
+    ench-knight: "Knight"
+    ench-lifesteal: "Lifesteal"
+    ench-lightning: "Lightning"
+    ench-longRange: "Long Range"
+    ench-lottery: "Lottery"
+    ench-lucky: "Lucky"
+    ench-magician: "Magician"
+    ench-mirror: "Mirror"
+    ench-multipleDamage: "Multiple Damage"
+    ench-nightyNight: "Nighty Night"
+    ench-ninja: "Ninja"
+    ench-nothingIsImpossible: "Nothing is Impossible"
+    ench-obsidianAddiction: "Obsidian Addiction"
+    ench-pescetarian: "Pescetarian"
+    ench-phoenix: "Phoenix"
+    ench-pickpocket: "Pickpocket"
+    ench-poison: "Poison"
+    ench-redstone: "Redstone"
+    ench-reduce: "Reduce"
+    ench-robber: "Robber"
+    ench-satiety: "Satiety"
+    ench-sendEmFlyin: "Send 'em Flyin'"
+    ench-shield: "Shield"
+    ench-smelt: "Smelt"
+    ench-statue: "Statue"
+    ench-stealthy: "Stealthy"
+    ench-stunning: "Stunning"
+    ench-suffocation: "Suffocation"
+    ench-sweetDreams: "Sweet Dreams"
+    ench-telekinesis: "Telekinesis"
+    ench-teleport: "Teleport"
+    ench-theLord: "The Lord"
+    ench-thunder: "Thunder"
+    ench-track: "Track"
+    ench-unoReverse: "Uno Reverse"
+    ench-unspawn: "Unspawn"
+    ench-vampire: "Vampire"
+    ench-vegan: "Vegan"
+    ench-wither: "Wither"
+    ench-witherly: "Witherly"
+
+
+
+  ru:
+    no-perms: '&cНедостаточно прав!'
+    no-console: '&сВы не можете использовать это из консоли!'
+    creating-log: '&bСоздаю лог...'
+    log-created: '&6Лог был создан в папке &b/plugins/UnderscoreEnchants/logfile.log/.'
+    couldnt-make-log: '&cНе получилось создать лог!'
+
+    ench-alive: "Живой"
+    ench-annoyance: "Надоедливость"
+    ench-antiBlock: "Анти-блокировка"
+    ench-battery: "Батарея"
+    ench-beheading: "Безголовый"
+    ench-block: "Блокировка"
+    ench-bloodthirsty: "Кровожадный"
+    ench-booster: "Усилитель"
+    ench-bountyHunter: "Охотник за Головами"
+    ench-bugged: "Баги"
+    ench-businessman: "Бизнесмен"
+    ench-butchering: "Скотоводство"
+    ench-cannon: "Пушка"
+    ench-combo: "Комбо"
+    ench-comboMode: "Режим Комбо"
+    ench-configIssues: "Ошибки Конфига"
+    ench-consistency: "Стабильность"
+    ench-critical: "Критический Удар"
+    ench-desperate: "Отчаяние"
+    ench-dislocate: "Запутывание"
+    ench-disspeller: "Снятие Чар"
+    ench-doctor: "Доктор"
+    ench-dontWorryBoutFallin: "Не Беспокойся о Падениях"
+    ench-duckingMorning: "Чёртово Утро"
+    ench-easyMode: "Простой Режим"
+    ench-enlightened: "Просвещённый"
+    ench-explosive: "Взрывчатка"
+    ench-flamethrower: "Огнемёт"
+    ench-forcefield: "Силовое Поле"
+    ench-friendshipIsMagic: "Дружба - это Чудо"
+    ench-ghast: "Гаст"
+    ench-godmode: "Режим Бога"
+    ench-goldenfish: "Золотая Рыба"
+    ench-goodPig: "Хорошая Свинка"
+    ench-grinder: "Трудолюб"
+    ench-guardianAngel: "Ангел-хранитель"
+    ench-gun: "Ружьё"
+    ench-hat: "Шляпа"
+    ench-ignition: "Поджигание"
+    ench-introvert: "Интроверт"
+    ench-knight: "Рыцарь"
+    ench-lifesteal: "Кража Жизни"
+    ench-lightning: "Молния"
+    ench-longRange: "Дальнее Расстояние"
+    ench-lottery: "Лотерея"
+    ench-lucky: "Удачливый"
+    ench-magician: "Маг"
+    ench-mirror: "Зеркало"
+    ench-multipleDamage: "Множественный Урон"
+    ench-nightyNight: "Спокойной Ночи"
+    ench-ninja: "Ниндзя"
+    ench-nothingIsImpossible: "Нет Ничего Невозможного"
+    ench-obsidianAddiction: "Зависимость от Обсидиана"
+    ench-pescetarian: "Песцетерианец"
+    ench-phoenix: "Феникс"
+    ench-pickpocket: "Карманник"
+    ench-poison: "Отрава"
+    ench-redstone: "Редстоун"
+    ench-reduce: "Уменьшение"
+    ench-robber: "Грабитель"
+    ench-satiety: "Насыщение"
+    ench-sendEmFlyin: "Отправь в Полёт"
+    ench-shield: "Щит"
+    ench-smelt: "Переплавка"
+    ench-statue: "Статуя"
+    ench-stealthy: "Скрытный"
+    ench-stunning: "Остановка"
+    ench-suffocation: "Удушье"
+    ench-sweetDreams: "Сладких Снов"
+    ench-telekinesis: "Телекинез"
+    ench-teleport: "Телепорт"
+    ench-theLord: "Лорд"
+    ench-thunder: "Гром"
+    ench-track: "Слежка"
+    ench-unoReverse: "Уно Разворот"
+    ench-unspawn: "Анти-спавн"
+    ench-vampire: "Вампир"
+    ench-vegan: "Веган"
+    ench-wither: "Иссушение"
+    ench-witherly: "Иссушающий"
+
+# Everything below is the enchantments config.
+# When changing something, please follow the commented limitations
+# to not accidentally break something. Thanks :)
+
+# ------------------------------------ ARMOR ------------------------------------
+BatteryEnchantmentRange: 5.0 # A non-negative number (default: 5.0) - please put a ".0" or whatever decimal after the number!
+BlockEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+MagicianEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+MirrorEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+ReduceEnchantmentAmount: 3.0 # A non-negative number. When reduce enchantment happens, the damage will be divided by this number
+# in order to get the result (default: 3.0). Please add a ".0" or a whatever decimal after the number!
+ReduceEnchantmentChance: 30 # An integer between 1 and 100 (default: 30)
+# ------------------------------------ ARMOR ------------------------------------
+
+# ------------------------------------ BOWS -------------------------------------
+CriticalEnchantmentChance: 1 # An integer between 1 and 100 (default: 1)
+FlamethrowerMinimumDistance: 30.0 # A non-negative number (default: 30.0) - please put a ".0" or whatever decimal after the number!
+GhastEnchantmentDamagesBlocks: false # A boolean (true/false) (default: false)
+GoldenfishEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+HeadshotEnchantmentChance: 15 # An integer between 1 and 100 (default: 15)
+LightningEnchantmentChance: 30 # An integer between 1 and 100 (default: 30)
+LongRangeMinimumDistance: 50.0 # A non-negative number (default: 50.0) - please put a ".0" or whatever decimal after the number!
+PoisonEnchantmentChance: 40 # An integer between 1 and 100 (default: 40)
+PoisonEnchantmentDuration: 2 # A non-negative number, indicating about seconds of Poison effect duration
+# ------------------------------------ BOWS -------------------------------------
+
+# ------------------------------------ TOOLS ------------------------------------
+BuggedEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+DoctorEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+GunEnchantmentCooldown: 10 # A non-negative integer, indicating about the cooldown in ticks (default: 10). NOTE: 1 second = 20 ticks, and 1 tick = 0.05 seconds.
+LuckyEnchantmentBlock: 'COAL_ORE' # A string, indicating about the block to break (default: COAL_ORE). Please look for them here https://helpch.at/docs/1.8/org/bukkit/Material.html
+LuckyEnchantmentChance: 3 # An integer between 1 and 100 (default: 3)
+
+# ------------------------------------ TOOLS ------------------------------------
+
+# ----------------------------------- WEAPONS -----------------------------------
+BloodthirstyEnchantmentChance: 3 # An integer between 1 and 100 (default: 3)
+BusinessmanEarns: 1 # A non-negative integer (default: 1)
+DislocateEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+ExplosiveEnchantmentChance: 7 # An integer between 1 and 100 (default: 7)
+GrinderEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+LifestealEnchantmentChance: 20 # An integer between 1 and 100 (default: 20)
+LotteryEnchantmentChance: 1 # An integer between 1 and 100 (default: 1)
+MultipleDamageEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+PickpocketEnchantmentChance: 1 # An integer between 1 and 100 (default: 1)
+RobberEnchantmentChance: 2 # An integer between 1 and 100 (default: 2)
+StunningEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+SuffocationEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+ThunderEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+WitherEnchantmentChance: 12 # An integer between 1 and 100 (default: 12)
+# ----------------------------------- WEAPONS -----------------------------------
+
+# ---------------------------------- TRIDENTS -----------------------------------
+ComboModeEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+GodmodeEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+HatEnchantmentChance: 5 # An integer between 1 and 100 (default: 5)
+SendEmFlyinEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+UnspawnEnchantmentChance: 10 # An integer between 1 and 100 (default: 10)
+# ---------------------------------- TRIDENTS -----------------------------------
+
+
+
+# Below, the GUI information is stored.
+# They are also translatable :)
+# P.S. The information is written in this format:
+# gui:             # DO NOT CHANGE THIS LINE
+#   lang:          # ONLY CHANGE THIS IF YOU ARE CREATING A NEW LANGUAGE ENTRY
+#     enchname:    # DO NOT CHANGE THIS LINE
+#       - Display Name
+#       - Lore
+#       - More lore
+#       - Even more lore
+# etc.
+gui:
+  en:
+    alive:
+      - '&d&lAlive &f(&bany armor&r&f)'
+      - '&6Alive enchantment is an armor enchantment.'
+      - '- When equipped, adds 1 * N hearts to your maximum health,'
+      - 'where N is the enchantment level.'
+      - '&7' # this line is a replacement for \n
+      - '&9Maximum level: &b2.'
+    annoyance:
+      - '&d&lAnnoyance &f(&bchestplates&r&f)'
+      - '&6Annoyance enchantment is a chestplate enchantment.'
+      - '- Blinds everyone in 5 block range of the one wearing it.'
+      - '&6Conflicts with &cIntrovert.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    antiblock:
+      - '&d&lAnti Block &f(&bbows&r&f)'
+      - '&6Anti Block is a bow enchantment.'
+      - '- When shooting at a player that is blocking with their shield,'
+      - 'there will be a 3 hearts damage without asking the shield''s opinion.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    battery:
+      - '&d&lBattery &f(&bchestplates&r&f)'
+      - '&6Battery is a chestplate enchantment.'
+      - '- Per every player in 5 block range who wear armor with this enchantment,'
+      - 'it decreases your received damage by 0.5 hearts.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    beheading:
+      - '&d&lBeheading &f(&bweapons&r&f)'
+      - '&6Beheading is a weapon enchantment.'
+      - '- After killing a player with a such weapon,'
+      - 'it drops the victim''s head.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    block:
+      - '&d&lBlock &f(&bany armor&r&f)'
+      - '&6Block is an armor enchantment.'
+      - '- When you get hit while wearing a such armor,'
+      - 'there''s a chance to cancel the damage and knock the damager away.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    bloodthirsty:
+      - '&d&lBloodthirsty &f(&bweapons&r&f)'
+      - '&6Bloodthirsty is a weapon enchantment.'
+      - '- After hitting a player with such weapon,'
+      - 'there''s a small chance to get Strength I for 4 * N seconds,'
+      - 'where N is your enchantment level.'
+      - '&7'
+      - '&9Maximum level: &b2.'
+    booster:
+      - '&d&lBooster &f(&bany armor&r&f)'
+      - '&6Booster is an armor enchantment.'
+      - '- When getting experience while wearing such armor,'
+      - 'the XP gets multiplied by your enchantment level + 1!'
+      - '&eNote that the enchantment checks go from up to down.'
+      - '&eThus, if you have Booster II on your helmet and Booster any on your boots,'
+      - '&ethe effect will be as if you use Booster II.'
+      - '&7'
+      - '&9Maximum level: &b5.'
+    bountyHunter:
+      - '&d&lBounty Hunter &f(&bweapons&r&f)'
+      - '&6Bounty Hunter is a weapon enchantment.'
+      - '- When hitting a player with such weapon,'
+      - 'the damage will increase by 10% per every diamond piece'
+      - 'that the victim is wearing!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    bugged:
+      - '&d&lBugged &f(&bpickaxes&r&f)'
+      - '&6Bugged is a pickaxe enchantment.'
+      - '- When mining with such pickaxe,'
+      - 'there''s a little chance to get the ore, but leave the block intact.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    businessman:
+      - '&d&lBusinessman &f(&bweapons&r&f)'
+      - '&6Businessman is a weapon enchantment.'
+      - '- When hitting a player with such weapon,'
+      - 'adds N points of Vault currency in the damager''s account,'
+      - 'where N is the enchantment level.'
+      - '&7'
+      - '&9Maximum level: &b5.'
+    butchering:
+      - '&d&lButchering &f(&bweapons&r&f)'
+      - '&6Butchering is a weapon enchantment.'
+      - '- Instantly kills peaceful mobs!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    cannon:
+      - '&d&lCannon &f(&bweapons&r&f)'
+      - '&6Cannon is a weapon enchantment.'
+      - '- When hitting a player with such weapon,'
+      - 'the damage is increased by 15% per every armor piece you don''t have!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    combo:
+      - '&d&lCombo &f(&bweapons&r&f)'
+      - '&6Combo is a weapon enchantment.'
+      - '- After hitting a player 5 times in 4 seconds &lconsecutively,'
+      - 'the victim gets negative effects!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    comboMode:
+      - '&d&lCombo Mode &f(&btridents&r&f)'
+      - '&6Combo Mode is a trident enchantment.'
+      - '- After damaging a player with such trident,'
+      - 'there''s a small chance to reset their no-damage ticks to 0!'
+      - '&6Conflicts with &cEasy Mode &6and &cGodmode.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    configIssues:
+      - '&d&lConfig Issues &f(&btools&r&f)'
+      - '&6Config Issues is a tool enchantment.'
+      - '- Upon mining a block with such tool,'
+      - 'every hostile mob in 15 block range will be damaged for'
+      - '0.5 * N hearts, where N is the enchantment level.'
+      - '&7'
+      - '&9Maximum level: &b2.'
+    consistency:
+      - '&d&lConsistency &f(&bweapons&r&f)'
+      - '&6Consistency is a weapon enchantment.'
+      - '- When the dealt damage is under 0.5 hearts, you deal 0.5 hearts of damage anyways'
+      - 'The damage minimum increases by 0.5 with every level.'
+      - '&7'
+      - '&9Maximum level: &b3.'
+    critical:
+      - '&d&lCritical &f(&bbows&r&f)'
+      - '&6Critical is a bow enchantment.'
+      - '- When shooting a player with such bow, there''s a tiny chance'
+      - 'to deal 5.5 hearts of damage to the victim - unless that is lethal:'
+      - 'in that case the victim would just get to 0.5 hearts and get Slowness and Blindness.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    desperate:
+      - '&d&lDesperate &f(&bany armor&r&f)'
+      - '&6Desperate is an armor enchantment.'
+      - '- After being killed while wearing such armor,'
+      - 'the killer gets launched away from the kill place'
+      - 'and it deals some non-lethal damage to the killer as well.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    dislocate:
+      - '&d&lDislocate &f(&bweapons&r&f)'
+      - '&6Dislocate is a weapon enchantment.'
+      - '- When hitting a player with such weapon,'
+      - 'there''s a small chance to rotate them randomly.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    disspeller:
+      - '&d&lDisspeller &f(&bweapons&r&f)'
+      - '&6Disspeller is a weapons enchantment.'
+      - '- When hitting a player with such weapon,'
+      - 'it immediately removes all the useful effects from the victim.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    doctor:
+      - '&d&lDoctor &f(&btools&r&f)'
+      - '&6Doctor is a tool enchantment.'
+      - '- Upon mining a block with such tool,'
+      - 'there''s a small chance to heal and feed you completely.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    dontWorryBoutFallin:
+      - '&d&lDon''t Worry ''Bout Fallin'' &f(&bboots&r&f)'
+      - '&6Don''t Worry ''Bout Fallin'' is a boots enchantment.'
+      - '- When falling down from a big height, you''ll be mounted on a chicken.'
+      - 'The chickens won''t leave you. Ever. And that''s a threat.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    duckingMorning:
+      - '&d&lDucking Morning &f(&bchestplates&r&f)'
+      - '&6Ducking Morning is a chestplate enchantment.'
+      - '- When equipping, it''ll be afternoon for you - forever.'
+      - 'Uh, wait, not forever. It''s until you unequip the chestplate.'
+      - '&6Conflicts with &cNighty Night.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    easyMode:
+      - '&d&lEasy Mode &f(&btridents&r&f)'
+      - '&6Easy Mode is a trident enchantment.'
+      - '- Upon damaging a hostile mob, that is not a boss,'
+      - 'the mob will die instantly!.'
+      - '&6Conflicts with &cGodmode &6and &cCombo Mode.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    enlightened:
+      - '&d&lEnlightened &f(&bhelmets&r&f)'
+      - '&6Enlightened is a helmet enchantment.'
+      - '- Equipping this helmet will permanently grant you'
+      - 'Water Breathing and Night Vision! Until you unequip it.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    explosive:
+      - '&d&lExplosive &f(&bweapons&r&f)'
+      - '&6Explosive is a weapon enchantment.'
+      - '- Hitting a player with such sword has a small chance'
+      - 'to "explode" the victim - spawn the explosion particles,'
+      - 'deal some damage and send them flying.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    flamethrower:
+      - '&d&lFlamethrower &f(&bbows&r&f)'
+      - '&6Flamethrower is a bow enchantment.'
+      - '- Shoot a player from 30 blocks, send some fire to them!'
+      - '&6Conflicts with &cGhast.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    forcefield:
+      - '&d&lForcefield &f(&bbows&r&f)'
+      - '&6Forcefield is a bow enchantment.'
+      - '- The arrows shot from such bow have a forcefield!'
+      - 'Everyone in the 1.5 * N block range from the arrow will get'
+      - 'launched away from it (N is the enchantment level).'
+      - 'Note that while the arrow is flying the forcefield won''t apply!'
+      - '&7'
+      - '&9Maximum level: &b2.'
+    friendshipIsMagic:
+      - '&d&lFriendship Is Magic &f(&btridents&r&f)'
+      - '&6Friendship Is Magic is a trident enchantment.'
+      - '- After shooting to a player with such trident,'
+      - 'you become friends for 10 seconds.'
+      - 'That means you can''t hurt each other.'
+      - 'You can only have one friend at a time!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    ghast:
+      - '&d&lGhast &f(&bbows&r&f)'
+      - '&6Ghast is a bow enchantment.'
+      - '- Whenever you shoot with such bow,'
+      - 'you fire a fireball instead of an arrow!'
+      - 'Doesn''t consume arrows.'
+      - '&6Conflicts with &cFlamethrower.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    goldenfish:
+      - '&d&lGoldenfish &f(&bbows&r&f)'
+      - '&6Goldenfish is a bow enchantment.'
+      - '- Whenever you shoot a player with such bow,'
+      - 'there''s a small chance to spawn a very aggressive'
+      - 'silverfish that will target the victim.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    godmode:
+      - '&d&lGodmode &f(&btridents&r&f)'
+      - '&6Godmode is a trident enchantment.'
+      - '- Upon damaging a player with such trident,'
+      - 'there''s a small chance to get a god-mode for 5 seconds.'
+      - '&6Conflicts with &cEasy Mode &6and &cCombo Mode.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    goodPig:
+      - '&d&lGood Pig &f(&bchestplates&r&f)'
+      - '&6Good Pig is a chestplate enchantment.'
+      - '- If you equip such chestplate, then'
+      - 'the &6Bad Piggies Drip &fwill go with you!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    grinder:
+      - '&d&lGrinder &f(&bweapons&r&f)'
+      - '&6Grinder is a weapon enchantment.'
+      - '- When you damage a player with such weapon,'
+      - 'there''s a tiny chance to remove 1 XP level from the victim,'
+      - 'and acquire 2 + N XP levels yourself! (N is the enchantment level).'
+      - '&7'
+      - '&9Maximum level: &b3.'
+    guardianAngel:
+      - '&d&lGuardian Angel &f(&bchestplates&r&f)'
+      - '&6Guardian Angel is a chestplate enchantment.'
+      - '- Upon receiving lethal damage, get teleported to your bed respawn location,'
+      - 'clear debuffs and fire, and get Regeneration V for 15 seconds. Cooldown: 10 minutes!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    gun:
+      - '&d&lGun &f(&bhoes&r&f)'
+      - '&6Gun is a hoe enchantment.'
+      - '- With a cooldown of 0.5 seconds, you can shoot a snowball'
+      - 'by right-clicking the hoe.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    hat:
+      - '&d&lHat &f(&btridents&r&f)'
+      - '&6Hat is a trident enchantment.'
+      - '- Upon damaging a player with such trident,'
+      - 'there''s a small chance to steal their helmet!'
+      - 'If you didn''t have a helmet before, it''ll automatically equip.'
+      - 'Otherwise, it''ll get in first free slot in your inventory, or drop nearby.'
+      - 'This won''t work if there''s a curse on the helmet!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    ignition:
+      - '&d&lIgnition &f(&btridents&r&f)'
+      - '&6Ignition is a trident enchantment.'
+      - '- Upon damaging a player while sneaking,'
+      - 'the victim will be set on fire.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    introvert:
+      - '&d&lIntrovert &f(&bchestplates&r&f)'
+      - '&6Introvert is a chestplate enchantment.'
+      - '- Whenever there''s a player in 4 block range,'
+      - 'an arrow will spawn from your body and fly towards them.'
+      - '&6Conflicts with &cAnnoyance.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    knight:
+      - '&d&lKnight &f(&bchestplates&r&f)'
+      - '&6Knight is a chestplate enchantment.'
+      - '- When you are on a vehicle, e.g. horse, the damage dealt by you'
+      - 'increases by 50%, and the damage dealt to you decreases by 50%!'
+      - 'If two knights start fighting while on vehicles, no effect occurs.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    lifesteal:
+      - '&d&lLifesteal &f(&bweapons&r&f)'
+      - '&6Lifesteal is a weapon enchantment.'
+      - '- When damaging a player with such weapon,'
+      - 'there''s a chance to heal yourself for 50% of the dealt damage!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    lightning:
+      - '&d&lLightning &f(&bbows&r&f)'
+      - '&6Lightning is a bow enchantment.'
+      - '- Upon shooting a player with such bow, there''s a chance'
+      - 'to strike a lightning on the victim, set them on fire and'
+      - 'push them away! The power of the knockback increases with levels.'
+      - '&7'
+      - '&9Maximum level: &b3.'
+    longRange:
+      - '&d&lLong Range &f(&bbows&r&f)'
+      - '&6Long Range is a bow enchantment.'
+      - '- Upon shooting a player with such bow from 50+ blocks,'
+      - 'the victim will be pushed far away!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    lottery:
+      - '&d&lLottery &f(&bweapons&r&f)'
+      - '&6Lottery is a weapon enchantment.'
+      - '- When hitting a player with such weapon,'
+      - 'there''s 1% chance to either kill the victim but set you on 3 hearts,'
+      - 'or vice versa.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    lucky:
+      - '&d&lLucky &f(&bpickaxes&r&f)'
+      - '&6Lucky is a pickaxe enchantment.'
+      - '- Upon mining coal ore, there''s a small chance'
+      - 'to acquire some golden nuggets.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    magician:
+      - '&d&lMagician &f(&bany armor&r&f)'
+      - '&6Magician is an armor enchantment.'
+      - '- Whenever someone throws an negative potion at you,'
+      - 'there''s a small chance to cancel the effect.'
+      - '&eNote: in order for this to work, you need to be in at least'
+      - '&ea 5 block range from the shooter!'
+      - '&6Conflicts with &cMirror.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    mirror:
+      - '&d&lMirror &f(&bany armor&r&f)'
+      - '&6Mirror is an armor enchantment.'
+      - '- Has the same effect and restrictions as Magician,'
+      - 'but it also gives the opposed effect to the shooter!'
+      - '&6Conflicts with &cMagician.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    multipleDamage:
+      - '&d&lMultiple Damage &f(&bweapons&r&f)'
+      - '&6Multiple Damage is a weapon enchantment.'
+      - '- When damaging a player with such weapon,'
+      - 'there''s a slight chance that after your hit,'
+      - '3 more hits would be dealt automatically in the span of 6 ticks!'
+      - 'The damage is random (each hit varies between 0.5 hearts and 2 hearts).'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    nightyNight:
+      - '&d&lNighty Night &f(&bchestplates&r&f)'
+      - '&6Nighty Night is a chestplate enchantment.'
+      - '- A complete opposite of Ducking Morning!'
+      - '&6Conflicts with &cDucking Morning.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    ninja:
+      - '&d&lNinja &f(&bweapons&r&f)'
+      - '&6Ninja is a weapon enchantment.'
+      - '- Upon killing a player with such weapon,'
+      - 'get Speed V and Jump Boost V for 15 seconds.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    nothingIsImpossible:
+      - '&d&lNothing is Impossible &f(&btools&r&f)'
+      - '&6Nothing is Impossible is a tool enchantment.'
+      - 'Instantly breaks bedrock, but consumes 5 durability!'
+      - 'The durability is reduced by 1 per level (e.g. level 2 >>> 4 durability)'
+      - '&6Conflicts with &cTelekinesis.'
+      - '&7'
+      - '&9Maximum level: &b3.'
+    obsidianAddiction:
+      - '&d&lObsidian Addiction &f(&bany armor&r&f)'
+      - '&6Obsidian Addiction is an armor enchantment.'
+      - '- Upon moving on obsidian with such armor equipped,'
+      - 'you''ll get useful effects!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    pescetarian:
+      - '&d&lPescetarian &f(&bany armor&r&f)'
+      - '&6Pescetarian is an armor enchantment.'
+      - '- When eating fish food while wearing such armor,'
+      - 'get useful effects for some time!'
+      - '&6Conflicts with &cVegan.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    phoenix:
+      - '&d&lPhoenix &f(&btools&r&f)'
+      - '&6Phoenix is a tool enchantment.'
+      - '- Upon your item being broken, get it repaired completely!'
+      - 'However, it will also consume the enchantment.'
+      - 'Having Phoenix III will give you Unbreaking V while repairing.'
+      - 'Phoenix II has the same effect as Phoenix I.'
+      - '&7'
+      - '&9Maximum level: &b3.'
+    pickpocket:
+      - '&d&lPickpocket &f(&bweapons&r&f)'
+      - '&6Pickpocket is a weapon enchantment.'
+      - '- Upon hitting a player with such weapon,'
+      - 'there''s a chance to drop their in-hand item.'
+      - '&6Conflicts with &cRobber.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    poison:
+      - '&d&lPoison &f(&bbows&r&f)'
+      - '&6Poison is a bow enchantment.'
+      - '- When shooting a player with such bow,'
+      - 'there''s a chance to poison them for 2 seconds.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    redstone:
+      - '&d&lRedstone &f(&bboots&r&f)'
+      - '&6Redstone is a boots enchantment.'
+      - '- Walking on redstone with such boots will activate it!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    reduce:
+      - '&d&lReduce &f(&bany armor&r&f)'
+      - '&6Reduce is an armor enchantment.'
+      - '- Upon receiving damage while wearing such armor,'
+      - 'there''s a chance to reduce the damage by 33%.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    robber:
+      - '&d&lRobber &f(&bweapons&r&f)'
+      - '&6Robber is a weapon enchantment.'
+      - '- When hitting a player with such weapon, there''s'
+      - 'a tiny chance to steal the victim''s item in hand!'
+      - '&6Conflicts with &cPickpocket.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    satiety:
+      - '&d&lSatiety &f(&bleggings&r&f)'
+      - '&6Satiety is a leggings enchantment.'
+      - '- Every 5 seconds you get satiated for N points of hunger,'
+      - 'where N is your enchantment level!'
+      - '&7'
+      - '&9Maximum level: &b2.'
+    sendEmFlyin:
+      - '&d&lSend ''em Flyin'' &f(&btridents&r&f)'
+      - '&6Send ''em Flyin'' is a trident enchantment.'
+      - '- Whenever you damage a player with such trident,'
+      - 'there''s a chance to spawn a bat 10 blocks above their location'
+      - 'and mount the player on that bat! Send ''em Flyin''!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    shield:
+      - '&d&lShield &f(&bany armor&r&f)'
+      - '&6Shield is an armor enchantment.'
+      - '- Upon your health dropping to 2 hearts or less,'
+      - 'get Speed and Resistance for 15 seconds, so you can escape.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    smelt:
+      - '&d&lSmelt &f(&bpickaxes&r&f)'
+      - '&6Smelt is a pickaxe enchantment.'
+      - '- Whenever you mine iron or gold ores with such pickaxe,'
+      - 'they will automatically smelt!'
+      - '&6Conflicts with &cTelekinesis.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    statue:
+      - '&d&lStatue &f(&bany armor&r&f)'
+      - '&6Statue is an armor enchantment.'
+      - '- Your knockback is always reduced by 50%!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    stealthy:
+      - '&d&lStealthy &f(&bweapons&r&f)'
+      - '&6Stealthy is a weapon enchantment.'
+      - '- If you are sneaking while hitting a player,'
+      - 'the damage will get increased by 20%!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    stunning:
+      - '&d&lStunning &f(&bweapons&r&f)'
+      - '&6Stunning is a weapon enchantment.'
+      - '- Whenever you hit a player with such weapon,'
+      - 'there''s a small chance to stun them for 2 seconds!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    suffocation:
+      - '&d&lSuffocation &f(&bweapons&r&f)'
+      - '&6Suffocation is a weapon enchantment.'
+      - '- Upon damaging your opponent with such weapon,'
+      - 'there''s a chance to drop some sand on them!'
+      - 'Be careful though, don''t get under that sand yourself.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    sweetDreams:
+      - '&d&lSweet Dreams &f(&bhelmets&r&f)'
+      - '&6Sweet Dreams is a helmet enchantment.'
+      - '- Upon entering a bed, get Regeneration and Resistance!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    telekinesis:
+      - '&d&lTelekinesis &f(&btools&r&f)'
+      - '&6Telekinesis is a tool enchantment.'
+      - '- Whenever you mine something with such tool,'
+      - 'the drops will automatically be in your inventory!'
+      - '&6Conflicts with &cSmelt &6and &cNothing is Impossible.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    teleport:
+      - '&d&lTeleport &f(&btridents&r&f)'
+      - '&6Teleport is a trident enchantment.'
+      - '- Whenever you shoot a trident 25+ blocks from you,'
+      - 'you''ll get teleported to its destination!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    theLord:
+      - '&d&lThe Lord &f(&btools&r&f)'
+      - '&6The Lord is a tool enchantment.'
+      - '- Mining a block with such tool will'
+      - 'stun EVERY player on the server for 10 seconds!'
+      - 'Cooldown: 10 minutes.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    thunder:
+      - '&d&lThunder &f(&bweapons&r&f)'
+      - '&6Thunder is a weapon enchantment.'
+      - '- Whenever you hit a player with such weapon,'
+      - 'there''s a chance to strike a lightning on them'
+      - 'and launch them away!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    track:
+      - '&d&lTrack &f(&bbows&r&f)'
+      - '&6Track is a bow enchantment.'
+      - '- After shooting a player with such bow,'
+      - 'their updated coordinates will appear in your actionbar'
+      - 'for about 3 seconds.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    unoReverse:
+      - '&d&lUno Reverse &f(&bweapons&r&f)'
+      - '&6Uno Reverse is a weapon enchantment.'
+      - '- If you are blocking and holding such weapon in your main hand,'
+      - 'then, whenever you get hit, the damager will be damaged for 2 hearts!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    unspawn:
+      - '&d&lUnspawn &f(&btridents&r&f)'
+      - '&6Unspawn is a trident enchantment.'
+      - '- Upon damaging a player with such trident,'
+      - 'there''s a small chance to reset their spawn location'
+      - 'to the default world spawn location!'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    vampire:
+      - '&d&lVampire &f(&bweapons&r&f)'
+      - '&6Vampire is a weapon enchantment.'
+      - '- After killing a player with such weapon,'
+      - 'get Regeneration for 10 seconds.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    vegan:
+      - '&d&lVegan &f(&bany armor&r&f)'
+      - '&6Vegan is an armor enchantment.'
+      - '- Upon consuming a vegetable, fruit, or similar product,'
+      - 'get some useful effects!'
+      - '&6Conflicts with &cPescetarian.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    wither:
+      - '&d&lWither &f(&bweapons&r&f)'
+      - '&6Wither is a weapon enchantment.'
+      - '- Upon hitting a player with such weapon,'
+      - 'there''s a small chance to wither them.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+    witherly:
+      - '&d&lWitherly &f(&btridents&r&f)'
+      - '&6Witherly is a trident enchantment.'
+      - '- Upon shooting a trident, shoot a wither head instead.'
+      - '&7'
+      - '&9Maximum level: &b1.'
+
+
+
+    # Here go the GUI basic item lores, etc.
+    armor:
+      - '&7' # There's no custom display name
+      - '&5Armor Enchantments'
+      - '&7 '
+      - '&6At the moment (1.0), UnderscoreEnchants provides'
+      - '&b25 &6armor enchantments.'
+    bows:
+      - '&7'
+      - '&5Bow Enchantments'
+      - '&7 '
+      - '&6At the moment (1.0), UnderscoreEnchants provides'
+      - '&b10 &6bow enchantments.'
+    tools:
+      - '&7'
+      - '&5Tool Enchantments'
+      - '&7 '
+      - '&6At the moment (1.0), UnderscoreEnchants provides'
+      - '&b10 &6tool enchantments.'
+    tridents:
+      - '&7'
+      - '&5Trident Enchantments'
+      - '&7 '
+      - '&6At the moment (1.0), UnderscoreEnchants provides'
+      - '&b10 &6trident enchantments.'
+    weapons:
+      - '&7'
+      - '&5Weapon Enchantments'
+      - '&7 '
+      - '&6At the moment (1.0), UnderscoreEnchants provides'
+      - '&b25 &6weapon enchantments.'
+
+  ru:
+    alive:
+      - '&d&lЖивой &f(&bброня&r&f)'
+      - '&6Зачарование "Живой" применяется на броню.'
+      - '- Такая броня добавляет 1 * N сердец к здоровью,'
+      - 'где N является уровнем зачарования.'
+      - '&7'
+      - '&9Максимальный уровень: &b2.'
+    annoyance:
+      - '&d&lНадоедливость &f(&bнагрудники&r&f)'
+      - '&6Зачарование "Надоедливость" применяется на нагрудники.'
+      - '- Ослепляет всех в 5 блоках от носителя нагрудника.'
+      - '&6Конфликтует с зачарованием &cИнтроверт.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    antiblock:
+      - '&d&lАнти-блокировка &f(&bлуки&r&f)'
+      - '&6Зачарование "Анти-блокировка" применяется на луки.'
+      - '- При выстреле в игрока, который блокируется щитом,'
+      - 'будет нанесен урон в 3 сердца.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    battery:
+      - '&d&lБатарея &f(&bнагрудники&r&f)'
+      - '&6Зачарование "Батарея" применяется на нагрудники.'
+      - '- За каждого игрока в 5 блоках, кто тоже носит "Батарею",'
+      - 'урон, нанесенный вам, будет меньше на 0.5 сердца.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    beheading:
+      - '&d&lБезголовый &f(&bоружия&r&f)'
+      - '&6Зачарование "Безголовый" применяется на оружия.'
+      - '- После убийства игрока, его голова'
+      - 'выпадает вам в инвентарь.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    block:
+      - '&d&lБлокировка &f(&bброня&r&f)'
+      - '&6Зачарование "Блокировка" применяется на броню.'
+      - '- После того, как вас ударяют,'
+      - 'есть шанс отменить урон и откинуть нападающего.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    bloodthirsty:
+      - '&d&lКровожадный &f(&bоружия&r&f)'
+      - '&6Зачарование "Кровожадный" применяется на оружия.'
+      - '- После удара игрока таким оружием,'
+      - 'есть шанс получить силу на 4 * N секунд,'
+      - 'где N является уровнем зачарования.'
+      - '&7'
+      - '&9Максимальный уровень: &b2.'
+    booster:
+      - '&d&lУсилитель &f(&bброня&r&f)'
+      - '&6Зачарование "Усилитель" применяется на броню.'
+      - '- При получении опыта в такой броне,'
+      - 'опыт умножается на уровень вашей брони + 1!'
+      - '&eСтоит заметить, что проверка на зачарование идет сверху вниз.'
+      - '&eЭто значит, что если на вашем шлеме Усилитель 2, а на ботинках Усилитель 3,'
+      - '&eэффект будет от Усилителя 2.'
+      - '&7'
+      - '&9Максимальный уровень: &b5.'
+    bountyHunter:
+      - '&d&lОхотник за Головами &f(&bоружия&r&f)'
+      - '&6Зачарование "Охотник за Головами" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'урон увеличится на 10% за каждую алмазную часть брони жертвы!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    bugged:
+      - '&d&lБаги &f(&bкирки&r&f)'
+      - '&6Зачарование "Баги" применяется на кирки.'
+      - '- Копая такой киркой,'
+      - 'есть шанс получить руду, оставив блок как есть.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    businessman:
+      - '&d&lБизнесмен &f(&bоружия&r&f)'
+      - '&6Зачарование "Бизнесмен" применяется на оружия.'
+      - '- Ударяя игрока таким оружием.'
+      - 'на счет игрока добавляется N денег,'
+      - 'где N является уровнем зачарования.'
+      - '&7'
+      - '&9Максимальный уровень: &b5.'
+    butchering:
+      - '&d&lСкотоводство &f(&bоружия&r&f)'
+      - '&6Зачарование "Скотоводство" применяется на оружия.'
+      - '- Мгновенно убивает мирных мобов!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    cannon:
+      - '&d&lПушка &f(&bоружия&r&f)'
+      - '&6Зачарование "Пушка" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'урон увеличится на 15% за каждую часть брони, которой у вас нет!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    combo:
+      - '&d&lКомбо &f(&bоружия&r&f)'
+      - '&6Зачарование "Комбо" применяется на оружия.'
+      - '- После 5 ударов на одного игрока за 4 секунды, &lкоторые идут друг за другом,'
+      - 'жертва получит отрицательные эффекты на некоторое время!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    comboMode:
+      - '&d&lРежим Комбо &f(&bтрезубцы&r&f)'
+      - '&6Зачарование "Режим Комбо" применяется на оружия.'
+      - '- После нанесения урона игроку таким трезубцем,'
+      - 'есть небольшой шанс сбросить его неуязвимость!'
+      - '&6Конфликтует с &cПростым Режимом &6и &cРежимом Бога.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    configIssues:
+      - '&d&lОшибки Конфига &f(&bинструменты&r&f)'
+      - '&6Зачарование "Ошибки Конфига" применяется на инструменты.'
+      - '- При ломании блока подобным инструментом,'
+      - 'все монстры в 15 блоках от игрока получат урон в'
+      - '0.5 * N сердец, где N является уровнем зачарования.'
+      - '&7'
+      - '&9Максимальный уровень: &b2.'
+    consistency:
+      - '&d&lСтабильность &f(&bоружия&r&f)'
+      - '&6&6Зачарование "Стабильность" применяется на оружия.'
+      - '- Когда нанесенный вами урон меньше 0.5 сердец, он повышается до 0.5 сердец.'
+      - 'Такой минимум увеличивается на 0.5 с каждым уровнем.'
+      - '&7'
+      - '&9Максимальный уровень: &b3.'
+    critical:
+      - '&d&lКритический удар &f(&bлуки&r&f)'
+      - '&6Зачарование "Критический удар" применяется на луки.'
+      - '- После выстрела в игрока подобным луком, есть очень маленький шанс'
+      - 'нанести 5.5 сердец урона, но только если это не летально:'
+      - 'в таком случае жертва просто опустится до 0.5 сердец и получит негативные эффекты.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    desperate:
+      - '&d&lОтчаяние &f(&bброня&r&f)'
+      - '&6Зачарование "Отчаяние" применяется на броню.'
+      - '- Когда вы умираете в такой броне,'
+      - 'убийцу откидывает на дальнее расстояние и наносит'
+      - 'рандомный не летальный урон.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    dislocate:
+      - '&d&lЗапутывание &f(&bоружия&r&f)'
+      - '&6Зачарование "Запутывание" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'есть шанс рандомно его повернуть.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    disspeller:
+      - '&d&lСнятие Чар &f(&bоружия&r&f)'
+      - '&6Зачарование "Снятие Чар" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'с него снимаются все полезные эффекты.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    doctor:
+      - '&d&lДоктор &f(&bинструменты&r&f)'
+      - '&6Зачарование "Доктор" применяется на инструменты.'
+      - '- Выкапывая блок таким инструментом,'
+      - 'есть шанс полностью вас вылечить и насытить.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    dontWorryBoutFallin:
+      - '&d&lНе Беспокойся о Падениях &f(&bботинки&r&f)'
+      - '&6&6Зачарование "Не Беспокойся о Падениях" применяется на ботинки.'
+      - '- Падая с большой высоты, вас посадит на курицу.'
+      - 'И она никогда вас не покинет. И это угроза.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    duckingMorning:
+      - '&d&lЧёртово Утро &f(&bнагрудники&r&f)'
+      - '&6&6Зачарование "Чёртово Утро" применяется на нагрудники.'
+      - '- Надевая этот нагрудник, для вас всегда будет день.'
+      - 'А нет, погодите, не всегда. Лишь до тех пор, пока вы не снимете его.'
+      - '&6Конфликтует со &cСпокойной Ночи.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    easyMode:
+      - '&d&lПростой Режим &f(&bтрезубцы&r&f)'
+      - '&6Зачарование "Простой Режим" применяется на трезубцы.'
+      - '- Ударяя монстра, который не является боссом,'
+      - 'он сразу же умирает!'
+      - '&6Конфликтует с &cРежимом Бога &6и &cРежимом Комбо.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    enlightened:
+      - '&d&lПросвещённый &f(&bшлемы&r&f)'
+      - '&6Зачарование "Просвещённый" применяется на шлемы.'
+      - '- Надевая этот шлем, вы получаете перманентные'
+      - 'Ночное Зрение и Подводное Дыхание! Пока вы не снимете шлем.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    explosive:
+      - '&d&lВзрывчатка &f(&bоружия&r&f)'
+      - '&6Зачарование "Взрывчатка" применяется на оружия.'
+      - '- Ударяя игрока таким оружием, есть шанс "взорвать" жертву, т.е.'
+      - 'заспавнить частицы взрыва и откинуть жертву.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    flamethrower:
+      - '&d&lОгнемёт &f(&bлуки&r&f)'
+      - '&6Зачарование "Огнемёт" применяется на луки.'
+      - '- Стреляя в игрока с 30+ блоков, в его направлении будет отправлен'
+      - 'огненный дождь!'
+      - '&6Конфликтует с &cГастом.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    forcefield:
+      - '&d&lСиловое Поле &f(&bлуки&r&f)'
+      - '&6Зачарование "Силовое Поле" применяется на луки.'
+      - '- Выстрел из такого лука даст стреле "силовое поле"!'
+      - 'Это значит, что все в радиусе 1.5 * N от стрелы будут откинуты от нее,'
+      - 'где N является уровнем зачарования.'
+      - 'Заметьте, что пока стрела летит, силовое поле не применяется!'
+      - '&7'
+      - '&9Максимальный уровень: &b2.'
+    friendshipIsMagic:
+      - '&d&lДружба - это Чудо &f(&bтрезубцы&r&f)'
+      - '&6Зачарование "Дружба - это Чудо" применяется на трезубцы.'
+      - '- Стреляя в игрока таким трезубцем,'
+      - 'вы становитесь друзьями на 10 секунд, т.е.'
+      - 'вы не можете наносить урон друг другу.'
+      - 'В одно время у вас может быть лишь один друг!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    ghast:
+      - '&d&lГаст &f(&bлуки&r&f)'
+      - '&6Зачарование "Гаст" применяется на луки.'
+      - 'Выстреливая таким луком,'
+      - 'вместо стрелы летит фаербол!'
+      - 'Не потребляет стрел.'
+      - '&6Конфликтует с &cОгнемётом.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    goldenfish:
+      - '&d&lЗолотая Рыба &f(&bлуки&r&f)'
+      - '&6Зачарование "Золотая Рыба" применяется на луки.'
+      - '- Стреляя в игрока таким луком,'
+      - 'есть шанс заспавнить агрессивную чешуйницу,'
+      - 'которая будет таргетить жертву.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    godmode:
+      - '&d&lРежим Бога &f(&bтрезубцы&r&f)'
+      - '&6Зачарование "Взрывчатка" применяется на трезубцы.'
+      - '- Нанося урон игроку таким трезубцем,'
+      - 'есть шанс стать неуязвимым на 5 секунд.'
+      - '&6Конфликтует с &cПростым Режимом &6и &cРежимом Комбо.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    goodPig:
+      - '&d&lХорошая Свинка &f(&нагрудники&r&f)'
+      - '&6Зачарование "Хорошая Свинка" применяется на нагрудники.'
+      - '- Надевая такой нагрудник,'
+      - '&6Bad Piggies Drip &fвсегда будет с тобой!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    grinder:
+      - '&d&lТрудолюб &f(&bоружия&r&f)'
+      - '&6Зачарование "Трудолюб" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'есть шанс удалить один уровень опыта у жертвы, а самому получить'
+      - '2 + N уровня, где N является уровнем зачарования.'
+      - '&7'
+      - '&9Максимальный уровень: &b3.'
+    guardianAngel:
+      - '&d&lАнгел-хранитель &f(&bнагрудники&r&f)'
+      - '&6Зачарование "Ангел-хранитель" применяется на оружия.'
+      - '- Получив летальный урон, вы будете телепортированы к локации своего спавна,'
+      - 'у вас удалятся отрицательные эффекты, и вы получите регенерацию на 15 секунд.'
+      - 'Перезарядка: 10 минут.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    gun:
+      - '&d&lРужьё &f(&bмотыги&r&f)'
+      - '&6Зачарование "Ружьё" применяется на мотыги.'
+      - '- С перезарядкой в 0.5 seconds, вы можете стрелять снежками,'
+      - 'нажимая правой кнопкой мыши.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    hat:
+      - '&d&lШляпа &f(&bтрезубцы&r&f)'
+      - '&6Зачарование "Шляпа" применяется на трезубцы.'
+      - '- Ударяя игрока таким трезубцем,'
+      - 'есть шанс украсть их шлем!'
+      - 'Если до этого у вас не было шлема, то он автоматически наденется.'
+      - 'В другом случае, он попадет в ваш первый свободный слот или выпадет возле вас.'
+      - 'Это не сработает, если на шлеме есть проклятие!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    ignition:
+      - '&d&lПоджигание &f(&bтрезубцы&r&f)'
+      - '&6Зачарование "Поджигание" применяется на трезубцы.'
+      - '- Ударив игрока, пока вы крадетесь,'
+      - 'жертва загорится.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    introvert:
+      - '&d&lИнтроверт &f(&bнагрудники&r&f)'
+      - '&6Зачарование "Интроверт" применяется на нагрудники.'
+      - '- Когда возле вас в 4 блоках есть игрок, то'
+      - 'из вашего тела в жертву вылетит стрела.'
+      - '&6Конфликтует с &cНадоедливостью.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    knight:
+      - '&d&lРыцарь &f(&bнагрудники&r&f)'
+      - '&6Зачарование "Рыцарь" применяется на нагрудники.'
+      - '- Когда вы сидите на чём-либо, например, лошади, то урон, нанесённый вами'
+      - 'увеличится на 50%, а урон, нанесённый вам, уменьшится на 50%!'
+      - 'Если два рыцаря будут сражаться сидя на чем-либо, эффекта не будет.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    lifesteal:
+      - '&d&lКража Жизни &f(&bоружия&r&f)'
+      - '&6Зачарование "Кража Жизни" применяется на оружия.'
+      - '- Ударяя игрока таким оружием'
+      - 'есть шанс вылечиться на 50% от нанесённого урона!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    lightning:
+      - '&d&lМолния &f(&bлуки&r&f)'
+      - '&6Зачарование "Молния" применяется на луки.'
+      - '- Выстреливая в игрока таким луком, есть шанс'
+      - 'ударить в них молнией, поджечь их и'
+      - 'и откинуть! Сила откидывания увеличивается с уровнями.'
+      - '&7'
+      - '&9Максимальный уровень: &b3.'
+    longRange:
+      - '&d&lДальнее Расстояние &f(&bлуки&r&f)'
+      - '&6Зачарование "Дальнее Расстояние" применяется на луки.'
+      - '- Стреляя в игрока с 50+ блоков,'
+      - 'жертву откинет далеко от предыдущего места!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    lottery:
+      - '&d&lЛотерея &f(&bоружия&r&f)'
+      - '&6Зачарование "Лотерея" применяется на оружия.'
+      - '- Ударяя игрока такиим оружием,'
+      - 'есть очень маленький шанс либо убить жертву, но оставить вас на 3 сердцах,'
+      - 'либо наоборот.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    lucky:
+      - '&d&lУдачливый &f(&bкирки&r&f)'
+      - '&6Зачарование "Удачливый" применяется на кирки.'
+      - '- Выкапывая уголь, есть шанс получить'
+      - 'несколько золотых самородков.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    magician:
+      - '&d&lМаг &f(&bброня&r&f)'
+      - '&6Зачарование "Маг" применяется на оружия.'
+      - '- Когда в тебя кто-то кидает негативное зелье,'
+      - 'есть шанс отменить эффект.'
+      - '&eВажно: для того, чтобы это работало, необходимо быть хотя бы'
+      - '&eв 5 блоках от стреляющего!'
+      - '&6Конфликтует с &cЗеркалом.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    mirror:
+      - '&d&lЗеркало &f(&bброня&r&f)'
+      - '&6Зачарование "Зеркало" применяется на броню.'
+      - '- Имеет такие же эффекты и ограничения как Маг,'
+      - 'но также выдает стреляющему этот эффект!'
+      - '&6Конфликтует с &cМагом.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    multipleDamage:
+      - '&d&lМножественный Урон &f(&bоружия&r&f)'
+      - '&6Зачарование "Множественный Урон" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'есть шанс, что после вашего удара'
+      - 'будут нанесены еще 3 автоматических удара!'
+      - 'Урон случайный, каждый удар варьируется между 0.5 и 2 сердцами.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    nightyNight:
+      - '&d&lСпокойной Ночи &f(&bнагрудники&r&f)'
+      - '&6Зачарование "Спокойной Ночи" применяется на нагрудники.'
+      - '- Полная противоположность Чёртову Утру!'
+      - '&6Конфликтует с &cЧёртовым Утром.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    ninja:
+      - '&d&lНиндзя &f(&bоружия&r&f)'
+      - '&6Зачарование "Ниндзя" применяется на оружия.'
+      - '- Убивая игрока таким оружием,'
+      - 'получи Скорость и Прыгучесть на 15 секунд.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    nothingIsImpossible:
+      - '&d&lНет Ничего Невозможного &f(&bинструменты&r&f)'
+      - '&6Зачарование "Нет Ничего Невозможного" применяется на инструменты.'
+      - 'Мгновенно ломает коренную породу, но отнимает 5 прочности!'
+      - 'Потраченная прочность уменьшается на 1 каждый уровень.'
+      - '&6Конфликтует с &cТелекинезом.'
+      - '&7'
+      - '&9Максимальный уровень: &b3.'
+    obsidianAddiction:
+      - '&d&lЗависимость от Обсидиана &f(&bброня&r&f)'
+      - '&6Зачарование "Зависимость от Обсидиана" применяется на броню.'
+      - '- Двигаясь по обсидиану в такой броне,'
+      - 'получи полезные эффекты!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    pescetarian:
+      - '&d&lПесцетерианец &f(&bброня&r&f)'
+      - '&6Зачарование "Песцетерианец" применяется на броню.'
+      - '- При поедании рыбной еды в такой броне,'
+      - 'получи полезные эффекты!'
+      - '&6Конфликтует с &cВеганом.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    phoenix:
+      - '&d&lФеникс &f(&bинструменты&r&f)'
+      - '&6Зачарование "Феникс" применяется на инструменты.'
+      - '- Вместо поломки инструмента он полностью починится!'
+      - 'Но вместе с починкой уйдёт Феникс.'
+      - 'Имея Феникс 3, во время починки вы получите Прочность 5.'
+      - 'У Феникса 2 такой же эффект, как у Феникса 1.'
+      - '&7'
+      - '&9Максимальный уровень: &b3.'
+    pickpocket:
+      - '&d&lКарманник &f(&bоружия&r&f)'
+      - '&6Зачарование "Карманник" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'есть шанс выкинуть их предмет в главной руке.'
+      - '&6Конфликтует с &cГрабителем.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    poison:
+      - '&d&lОтрава &f(&bлуки&r&f)'
+      - '&6Зачарование "Отрава" применяется на луки.'
+      - '- Стреляя в игрока из такого лука,'
+      - 'есть шанс отравить их на 2 секунды.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    redstone:
+      - '&d&lРедстоун &f(&bботинки&r&f)'
+      - '&6Зачарование "Редстоун" применяется на ботинки.'
+      - '- Ходьба по редстоуну будет активировать его!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    reduce:
+      - '&d&lУменьшение &f(&bброня&r&f)'
+      - '&6Зачарование "Уменьшение" применяется на броню.'
+      - '- Получая урон в такой броне,'
+      - 'есть шанс уменьшить его на 33%.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    robber:
+      - '&d&lГрабитель &f(&bоружия&r&f)'
+      - '&6Зачарование "Грабитель" применяется на оружия.'
+      - '- Ударяя игрока таким оружием, есть'
+      - 'маленький шанс украсть предмет в его главной руке!'
+      - '&6Конфликтует с &cГрабителем.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    satiety:
+      - '&d&lНасыщение &f(&bпоножи&r&f)'
+      - '&6Зачарование "Насыщение" применяется на поножи.'
+      - '- Каждые 5 секунд вы насыщаетесь на N единиц голода,'
+      - 'где N является вашим уровнем зачарования!'
+      - '&7'
+      - '&9Максимальный уровень: &b2.'
+    sendEmFlyin:
+      - '&d&lОтправь в Полёт &f(&bтрезубцы&r&f)'
+      - '&6Зачарование "Отправь в Полёт" применяется на трезубцы.'
+      - '- Ударяя игрока таким трезубцем,'
+      - 'есть шанс заспавнить летучую мышь на 10 блоков выше жертвы'
+      - 'и посадить жертву на мышь! Отправь их в полет!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    shield:
+      - '&d&lЩит &f(&bброня&r&f)'
+      - '&6Зачарование "Щит" применяется на броню.'
+      - '- Когда ваше здоровье упадет до 2 или менее сердец,'
+      - 'вы получите Стойкость и Скорость на 15 секунд, чтобы сбежать.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    smelt:
+      - '&d&lПереплавка &f(&bкирки&r&f)'
+      - '&6Зачарование "Переплавка" применяется на кирки.'
+      - '- Выкапывая золото или железо такой киркой,'
+      - 'они автоматически переплавятся!'
+      - '&6Конфликтует с &cТелекинезом.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    statue:
+      - '&d&lСтатуя &f(&bброня&r&f)'
+      - '&6Зачарование "Статуя" применяется на броню.'
+      - '- Вас будет откидывать на 50% меньше!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    stealthy:
+      - '&d&lСкрытный &f(&bоружия&r&f)'
+      - '&6Зачарование "Скрытный" применяется на оружия.'
+      - '- Если ударяя игрока вы крадетесь,'
+      - 'то нанесенный урон увеличится на 20%!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    stunning:
+      - '&d&lОстановка &f(&bоружия&r&f)'
+      - '&6Зачарование "Остановка" применяется на оружия.'
+      - '- Ударяя игрока подобным оружием,'
+      - 'есть шанс полностью остановить его на 2 секунды!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    suffocation:
+      - '&d&lУдушье &f(&bоружия&r&f)'
+      - '&6Зачарование "Удушье" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'есть шанс уронить на них песок!'
+      - 'Но будь осторожен и не попадись под него сам.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    sweetDreams:
+      - '&d&lСладких Снов &f(&bшлемы&r&f)'
+      - '&6Зачарование "Сладких Снов" применяется на шлемы.'
+      - '- Ложась спать, получите Регенерацию и Стойкость!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    telekinesis:
+      - '&d&lТелекинез &f(&bинструменты&r&f)'
+      - 'Зачарование "Телекинез" применяется на инструменты.'
+      - '- Выкапывая что-либо таким инструментом,'
+      - 'все дропы окажутся в вашем инвентаре'
+      - '&6Конфликтует с &cПереплавкой и &cНет Ничего Невозможного.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    teleport:
+      - '&d&lТелепорт &f(&bтрезубцы&r&f)'
+      - 'Зачарование "Телепорт" применяется на трезубцы.'
+      - '- Стреляя трезубцем на 25+ блоков от себя,'
+      - 'вас телепортирует на его место приземления!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    theLord:
+      - '&d&lЛорд &f(&bинструменты&r&f)'
+      - 'Зачарование "Лорд" применяется на инструменты.'
+      - '- Выкапывая блок таким инструментом, все игроки на сервере'
+      - 'будут остановлены на 10 секунд!'
+      - 'Перезарядка: 10 минут.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    thunder:
+      - '&d&lГром &f(&bоружия&r&f)'
+      - 'Зачарование "Гром" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'есть шанс ударить в него молнией и откинуть!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    track:
+      - '&d&lСлежка &f(&bлуки&r&f)'
+      - 'Зачарование "Слежка" применяется на луки.'
+      - '- Стреляя в игрока таким луком,'
+      - 'вы будете видеть их координаты в экшнбаре'
+      - 'примерно 3 секунды.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    unoReverse:
+      - '&d&lУно Разворот &f(&bоружия&r&f)'
+      - 'Зачарование "Уно Разворот" применяется на оружия.'
+      - '- Если вы блокируетесь, держа этот меч в главной руке,'
+      - 'то при получении урона нападающий получит урон в 2 сердца!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    unspawn:
+      - '&d&lАнти-спавн &f(&bтрезубцы&r&f)'
+      - 'Зачарование "Анти-спавн" применяется на трезубцы.'
+      - '- Ударяя игрока таким трезубцем,'
+      - 'есть шанс сбросить их локацию спавна на дефолтный спавн мира!'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    vampire:
+      - '&d&lВампир &f(&bоружия&r&f)'
+      - 'Зачарование "Вампир" применяется на оружия.'
+      - '- Убивая игрока таким оружием,'
+      - 'получите Регенерацию на 10 секунд.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    vegan:
+      - '&d&lВеган &f(&bброня&r&f)'
+      - 'Зачарование "Веган" применяется на броню.'
+      - '- Съедая фрукт, овощ, или подобное,'
+      - 'получите полезные эффекты!'
+      - '&6Конфликтует с &cПесцетерианцем.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    wither:
+      - '&d&lИссушение &f(&bоружия&r&f)'
+      - 'Зачарование "Иссушение" применяется на оружия.'
+      - '- Ударяя игрока таким оружием,'
+      - 'есть шанс наложить на них Иссушение.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+    witherly:
+      - '&d&lИссушающий &f(&bтрезубцы&r&f)'
+      - 'Зачарование "Иссушающий" применяется на трезубцы.'
+      - '- Вместо того, чтобы выстрелить трезубцем, вылетит голова визера.'
+      - '&7'
+      - '&9Максимальный уровень: &b1.'
+
+
+
+    armor:
+      - '&7'
+      - '&5Зачарования на броню'
+      - '&7 '
+      - '&6На данный момент (1.0), UnderscoreEnchants предоставляет'
+      - '&b25 &6зачарований на броню.'
+    bows:
+      - '&7'
+      - '&5Зачарования на луки'
+      - '&7 '
+      - '&6На данный момент (1.0), UnderscoreEnchants предоставляет'
+      - '&b10 &6зачарований на луки.'
+    tools:
+      - '&7'
+      - '&5Зачарования на инструменты'
+      - '&7 '
+      - '&6На данный момент (1.0), UnderscoreEnchants предоставляет'
+      - '&b10 &6зачарований на инструменты.'
+    tridents:
+      - '&7'
+      - '&5Зачарования на трезубцы'
+      - '&7 '
+      - '&6На данный момент (1.0), UnderscoreEnchants предоставляет'
+      - '&b10 &6зачарований на трезубцы.'
+    weapons:
+      - '&7'
+      - '&5Зачарования на оружия'
+      - '&7 '
+      - '&6На данный момент (1.0), UnderscoreEnchants предоставляет'
+      - '&b25 &6зачарований на оружия.'
