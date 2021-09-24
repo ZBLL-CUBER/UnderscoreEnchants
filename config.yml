@@ -1,4 +1,5 @@
-# Please note that I love you for buying this plugin!
+# Thanks for purchasing!
+# P.S. Please do not change the language AFTER the plugin has been used for a while - the enchantment names will be bugged!
 
 replace-table-gui: true # Replaces enchantment table GUI with a custom one.
 replace-anvil-gui: true # Replaces the default anvil GUI with a custom one.
@@ -8,6 +9,7 @@ disable-telekinesis: true
 disable-smelt: true
 # Set these two to true if you are on 1.17+! They won't work due to raw iron, raw gold, etc.
                           # Otherwise, set to false.
+                          # P.S. Due to plugin moving to 1.17 only, this will be resolved as soon as possible.
 
 lang: en # Selected from below.
 
@@ -28,6 +30,10 @@ messages:
     creating-log: '&bCreating a log...' # Called when a /log command is used.
     log-created: '&6A log has been created in &b/plugins/UnderscoreEnchants/logfile.log/ folder.' # Called when log creation is finished.
     couldnt-make-log: '&cCouldn''t create a log!' # Called when something went wrong while creating a log.
+    improper-args: '&cImproper amount of arguments!' # Called when improper amount of arguments are inputted in the command.
+    wrong-enchantment-name: '&cCouldn''t enchant the item - unknown enchantment!' # Called when /uenchant command has a wrong enchantment argument.
+    wrong-enchantment-level: '&cCouldn''t enchant the item - its level is either higher than the maximum or less than 1!' # Called when /uenchant command has a wrong level argument.
+    enchanted: '&6Enchanted your item with &b%name% %level%.' # Called after a successful /uenchant.
 
     # Below, the enchanted names are stored.
     # This was done so there was no potential conflicting between enchantment plugins.
@@ -122,6 +128,10 @@ messages:
     creating-log: '&bСоздаю лог...'
     log-created: '&6Лог был создан в папке &b/plugins/UnderscoreEnchants/logfile.log/.'
     couldnt-make-log: '&cНе получилось создать лог!'
+    improper-args: '&cНеверное количество аргументов!'
+    wrong-enchantment-name: '&cНе получилось зачаровать предмет - неизвестное зачарование!'
+    wrong-enchantment-level: '&cНе получилось зачаровать предмет - уровень либо превышает максимум, либо меньше чем 1!'
+    enchanted: '&6Ваш предмет был зачарован на &b%name% %level%.'
 
     ench-alive: "Живой"
     ench-annoyance: "Надоедливость"
@@ -555,7 +565,7 @@ gui:
     gun:
       - '&d&lGun &f(&bhoes&r&f)'
       - '&6Gun is a hoe enchantment.'
-      - '- With a cooldown of 0.5 seconds, you can shoot a snowball'
+      - '- With a cooldown of 0.5 seconds, you can shoot an arrow'
       - 'by right-clicking the hoe.'
       - '&7'
       - '&9Maximum level: &b1.'
@@ -1196,7 +1206,7 @@ gui:
     gun:
       - '&d&lРужьё &f(&bмотыги&r&f)'
       - '&6Зачарование "Ружьё" применяется на мотыги.'
-      - '- С перезарядкой в 0.5 seconds, вы можете стрелять снежками,'
+      - '- С перезарядкой в 0.5 секунд, вы можете стрелять стрелами,'
       - 'нажимая правой кнопкой мыши.'
       - '&7'
       - '&9Максимальный уровень: &b1.'
