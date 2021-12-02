@@ -1,17 +1,17 @@
-# Thanks for purchasing!
-# P.S. Please do not change the language AFTER the plugin has been used for a while - the enchantment names will be bugged!
 replace-table-gui: true # Replaces enchantment table GUI with a custom one.
 replace-anvil-gui: true # Replaces the default anvil GUI with a custom one.
 fireworks-on-enchants: true # Launches a firework on every successful enchant. Note that these fireworks are harmful!
-
-lang: en # Selected from below.
 
 bStats: true # A boolean indicating about bStats job. Collects default bStats data and the used language.
 updater: 24 # Each X hours, an updater checks for updates. Default: 24.
 
 activated: true # A boolean, indicating whether a message should be sent upon enchantment activation.
 
-# This section contains the used messages.
+permitScrolls: true # A boolean indicating whether to enable scrolls or not.
+
+lang: en # Selected from below.
+
+# This section contains the used UnderscoreEnchants.messages.
 # They are translated to English and Russian by default, but in case you want to add your own translation,
 # you can create your own section and translate the messages, then put the section name in the "lang" section.
 # Also, if you have translated a section, it'd be neat if you made a pull request :)
@@ -30,6 +30,7 @@ messages:
     enchanted: '&6Enchanted your item with &b%name% %level%.' # Called after a successful /uenchant.
     activated: '&6You have activated the &l&b%name% enchantment.' # Called when an enchantment was activated. P.S. "activated" boolean (at the top) must be true for this.
     no-bleed: '&eYou are no longer bleeding.' # Called when a player stops bleeding from Spade.
+    # Credit to ZBLL (the creator)
 
   ru:
     no-perms: '&cНедостаточно прав!'
@@ -43,6 +44,77 @@ messages:
     enchanted: '&6Ваш предмет был зачарован на &b%name% %level%.'
     activated: '&6Вы использовали зачарование &l&b%name%.'
     no-bleed: '&eВы больше не истекаете кровью.'
+    # Credit to ZBLL (the creator)
+
+  ro:
+    no-perms: '&cPermisiuni insuficiente!'
+    no-console: '&cNu poți folosi asta din consolă!'
+    creating-log: '&bCrearea unui jurnal...'
+    log-created: '&6Un jurnal a fost creat în folderul &b/plugins/UndercoreEnchants/logfile.log/.'
+    couldnt-make-log: '&cNu s-a putut crea un jurnal!'
+    improper-args: '&cNumăr nepotrivit de argumente!'
+    wrong-enchantment-name: '&cNu s-a putut încânta obiectul - vrajeală necunoscută!'
+    wrong-enchantment-level: '&cNu s-a putut vrăji elementul - nivelul său este fie mai mare decât maxim, fie mai mic de 1!'
+    enchanted: '&6V-ați vrăjit articolul cu &b%name% %level%.'
+    activated: '&6Ai activat vraja &l&b%name%.'
+    no-bleed: '&eNu mai sângerezi.'
+    # Credit to Lukedy
+
+  it:
+    no-perms: '&cPermessi insufficienti!'
+    no-console: '&cNon si può usare da console!'
+    creating-log: '&bCreare un log...'
+    log-created: '&6Un log è stato creato nella cartella &b/plugins/UnderscoreEnchants/logfile.log/.'
+    couldnt-make-log: '&cImpossibile creare un log!'
+    improper-args: '&cQuantità impropria di parametri!'
+    wrong-enchantment-name: '&cImpossibile incantare l''oggetto - incanto sconosciuto!'
+    wrong-enchantment-level: '&cImpossibile incantare l''oggetto - il suo livello è superiore al massimo o inferiore a 1!'
+    enchanted: '&6Incanta il tuo oggetto con &b%name% %level%.'
+    activated: '&6Hai attivato l'incanto &l&b%name%.'
+    no-bleed: '&eNon stai più sanguinando.'
+    # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
+
+  es:
+    no-perms: '&c¡Permisos insuficientes!'
+    no-console: '&c¡No se puede utilizar desde una consola!'
+    creating-log: '&bCreando un registro...'
+    log-created: '&6Se ha creado un registro en la carpeta &b/plugins/UnderscoreEnchants/logfile.log/.'
+    couldnt-make-log: '¡No se pudo crear un registro!'
+    improper-args: '&c¡Cantidad inadecuada de parámetros!'
+    wrong-enchantment-name: '&cNo se ha podido encantar el objeto - ¡encantamiento desconocido!'
+    wrong-enchantment-level: '&cNo se ha podido encantar el objeto - ¡su nivel es superior al máximo o inferior a 1!'
+    enchanted: '&6Enchanted su artículo con &b%name% %level%.'
+    activated: '&6Has activado el encantamiento &l&b%name%.'
+    no-bleed: '&eYa no estás sangrando.'
+    # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
+
+  de:
+    no-perms: '&cUnzureichende Berechtigungen!'
+    no-console: '&cSie können dies nicht über die Konsole verwenden!'
+    creating-log: '&bErstelle ein Protokoll...'
+    log-created: '&6Ein Log wurde im Ordner &b/plugins/UnderscoreEnchants/logfile.log/ erstellt.'
+    couldnt-make-log: '&cKonnte kein Protokoll erstellen!'
+    improper-args: '&cUnzulässige Anzahl von Parametern!'
+    wrong-enchantment-name: '&cCouldn't enchant the item - unknown enchantment!'
+    wrong-enchantment-level: '&cKonnte den Gegenstand nicht verzaubern - seine Stufe ist entweder höher als das Maximum oder kleiner als 1!'
+    enchanted: '&6Ihr Gegenstand wurde mit &b%Name% %level% verzaubert.'
+    activated: '&6Du hast die Verzauberung &l&b%name% aktiviert.'
+    no-bleed: '&eDu blutest nicht mehr.'
+    # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
+
+  fr:
+    no-perms: '&cPermissions insuffisantes!'
+    no-console: '&cVous ne pouvez pas l''utiliser depuis la console!'
+    creating-log: '&bCréation d''un journal...'
+    log-created: '&6Un journal a été créé dans le dossier &b/plugins/UnderscoreEnchants/logfile.log/'.
+    couldnt-make-log: '&cImpossible de créer un journal!'
+    improper-args : '&cQuantité incorrecte de paramètres!'
+    wrong-enchantment-name: '&cPeut pas enchanter l''objet - enchantement inconnu!'
+    wrong-enchantment-level: '&cPas pu enchanter l''objet - son niveau est soit supérieur au maximum, soit inférieur à 1!'
+    enchanted: '&6Enchanter votre objet avec &b%name% %level%.'
+    activated: '&6Vous avez activé l''enchantement &l&b%name%.'
+    no-bleed: '&eVous ne saignez plus.'
+    # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
 
 armor:
   - '&7' # Leave this line as it is now, please.
@@ -65,4 +137,4 @@ weapons:
   - '&5Weapon Enchantments'
   - '&7 '
 
-version: '1.5' # DO NOT CHANGE THIS YOURSELF!!!
+version: '1.9' # DO NOT CHANGE THIS YOURSELF!!!
