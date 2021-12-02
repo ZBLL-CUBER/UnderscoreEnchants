@@ -108,13 +108,28 @@ messages:
     creating-log: '&bCréation d''un journal...'
     log-created: '&6Un journal a été créé dans le dossier &b/plugins/UnderscoreEnchants/logfile.log/'.
     couldnt-make-log: '&cImpossible de créer un journal!'
-    improper-args : '&cQuantité incorrecte de paramètres!'
+    improper-args: '&cQuantité incorrecte de paramètres!'
     wrong-enchantment-name: '&cPeut pas enchanter l''objet - enchantement inconnu!'
     wrong-enchantment-level: '&cPas pu enchanter l''objet - son niveau est soit supérieur au maximum, soit inférieur à 1!'
     enchanted: '&6Enchanter votre objet avec &b%name% %level%.'
     activated: '&6Vous avez activé l''enchantement &l&b%name%.'
     no-bleed: '&eVous ne saignez plus.'
     # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
+
+  tr:
+    no-perms: '&cYetersiz izinler!'
+    no-console: '&cBunu konsoldan kullanamazsınız!'
+    creating-log: '&bBir günlük oluşturuluyor...'
+    log-created: '&b/plugins/UnderscoreEnchants/logfile.log/ klasöründe &6bir günlük oluşturuldu.'
+    couldnt-make-log: '&cGünlük oluşturulamadı!'
+    improper-args: '&cUygunsuz sayıda argüman!'
+    wrong-enchantment-name: '&cÖğeyi büyüleyemedi - bilinmeyen büyü!'
+    wrong-enchantment-level: '&cÖğeyi büyüleyemedi - seviyesi ya maksimumdan yüksek ya da 1''den az!'
+    enchanted: '&6Öğenizi &b%name% %level% ile büyüledi.'
+    activated: '&6&l&b%name% büyüsünü etkinleştirdiniz.'
+    no-bleed: '&eArtık kanamanız yok.'
+    # Credit to Kigo
+
 
 armor:
   - '&7' # Leave this line as it is now, please.
