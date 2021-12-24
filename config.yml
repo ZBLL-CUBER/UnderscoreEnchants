@@ -89,18 +89,17 @@ messages:
     # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
 
   de:
-    no-perms: '&cUnzureichende Berechtigungen!'
-    no-console: '&cSie können dies nicht über die Konsole verwenden!'
-    creating-log: '&bErstelle ein Protokoll...'
-    log-created: '&6Ein Log wurde im Ordner &b/plugins/UnderscoreEnchants/logfile.log/ erstellt.'
-    couldnt-make-log: '&cKonnte kein Protokoll erstellen!'
-    improper-args: '&cUnzulässige Anzahl von Parametern!'
-    wrong-enchantment-name: '&cCouldn't enchant the item - unknown enchantment!'
-    wrong-enchantment-level: '&cKonnte den Gegenstand nicht verzaubern - seine Stufe ist entweder höher als das Maximum oder kleiner als 1!'
-    enchanted: '&6Ihr Gegenstand wurde mit &b%Name% %level% verzaubert.'
+    no-perms: '&cKeine Berechtigung!'
+    no-console: '&cDu kannst diesen Befehl nicht von der Konsole benutzen!'
+    creating-log: '&bErstelle Log...'
+    log-created: '&6Log wurde im Ordner &b/plugins/UnderscoreEnchants/logfile.log/ erstellt.'
+    couldnt-make-log: '&cKonnte kein Log erstellen!'
+    improper-args: '&cUngültige Anzahl an Parametern!'
+    wrong-enchantment-name: '&cKonnte den Gegenstand nicht verzaubern - unbekannte Verzauberung!'
+    wrong-enchantment-level: '&cKonnte den Gegenstand nicht verzaubern - das angegebene Level ist entweder höher als das Maximum oder kleiner als 1!'
+    enchanted: '&6Dein Gegenstand wurde mit &b%Name% %level% verzaubert.'
     activated: '&6Du hast die Verzauberung &l&b%name% aktiviert.'
     no-bleed: '&eDu blutest nicht mehr.'
-    # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
 
   fr:
     no-perms: '&cPermissions insuffisantes!'
