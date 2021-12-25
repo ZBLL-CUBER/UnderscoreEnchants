@@ -30,6 +30,7 @@ messages:
     enchanted: '&6Enchanted your item with &b%name% %level%.' # Called after a successful /uenchant.
     activated: '&6You have activated the &l&b%name% enchantment.' # Called when an enchantment was activated. P.S. "activated" boolean (at the top) must be true for this.
     no-bleed: '&eYou are no longer bleeding.' # Called when a player stops bleeding from Spade.
+    wrong-parameter: '&cWrong parameter (%param%)!' # Called when a specific paragraph with no specific message has an improper value.
     # Credit to ZBLL (the creator)
 
   ru:
@@ -44,6 +45,7 @@ messages:
     enchanted: '&6Ваш предмет был зачарован на &b%name% %level%.'
     activated: '&6Вы использовали зачарование &l&b%name%.'
     no-bleed: '&eВы больше не истекаете кровью.'
+    wrong-parameter: '&cНеправильный параметр (%param%)!'
     # Credit to ZBLL (the creator)
 
   ro:
@@ -58,7 +60,8 @@ messages:
     enchanted: '&6V-ați vrăjit articolul cu &b%name% %level%.'
     activated: '&6Ai activat vraja &l&b%name%.'
     no-bleed: '&eNu mai sângerezi.'
-    # Credit to Lukedy
+    wrong-parameter: '&cParametru greșit (%param%)!'
+    # Credit to Lukedy & DeepL
 
   it:
     no-perms: '&cPermessi insufficienti!'
@@ -70,22 +73,24 @@ messages:
     wrong-enchantment-name: '&cImpossibile incantare l''oggetto - incanto sconosciuto!'
     wrong-enchantment-level: '&cImpossibile incantare l''oggetto - il suo livello è superiore al massimo o inferiore a 1!'
     enchanted: '&6Incanta il tuo oggetto con &b%name% %level%.'
-    activated: '&6Hai attivato l'incanto &l&b%name%.'
+    activated: '&6Hai attivato l''incanto &l&b%name%.'
     no-bleed: '&eNon stai più sanguinando.'
+    wrong-parameter: '&cParametro errato (%param%)!'
     # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
 
   es:
     no-perms: '&c¡Permisos insuficientes!'
     no-console: '&c¡No se puede utilizar desde una consola!'
-    creating-log: '&bCreando un registro...'
-    log-created: '&6Se ha creado un registro en la carpeta &b/plugins/UnderscoreEnchants/logfile.log/.'
-    couldnt-make-log: '¡No se pudo crear un registro!'
+    creating-log: '&bCreando un log...'
+    log-created: '&6Se ha creado un log en la carpeta &b/plugins/UnderscoreEnchants/logfile.log/.'
+    couldnt-make-log: '¡No se pudo crear un log!'
     improper-args: '&c¡Cantidad inadecuada de parámetros!'
     wrong-enchantment-name: '&cNo se ha podido encantar el objeto - ¡encantamiento desconocido!'
     wrong-enchantment-level: '&cNo se ha podido encantar el objeto - ¡su nivel es superior al máximo o inferior a 1!'
     enchanted: '&6Enchanted su artículo con &b%name% %level%.'
     activated: '&6Has activado el encantamiento &l&b%name%.'
     no-bleed: '&eYa no estás sangrando.'
+    wrong-parameter: '&c¡Parámetro incorrecto (%param%)!'
     # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
 
   de:
@@ -100,12 +105,14 @@ messages:
     enchanted: '&6Dein Gegenstand wurde mit &b%Name% %level% verzaubert.'
     activated: '&6Du hast die Verzauberung &l&b%name% aktiviert.'
     no-bleed: '&eDu blutest nicht mehr.'
+    wrong-parameter: '&cUngültig Parameter (%param%)!'
+    # Credit to mfnalex for editing default translations!
 
   fr:
     no-perms: '&cPermissions insuffisantes!'
     no-console: '&cVous ne pouvez pas l''utiliser depuis la console!'
     creating-log: '&bCréation d''un journal...'
-    log-created: '&6Un journal a été créé dans le dossier &b/plugins/UnderscoreEnchants/logfile.log/'.
+    log-created: '&6Un journal a été créé dans le dossier &b/plugins/UnderscoreEnchants/logfile.log/.'
     couldnt-make-log: '&cImpossible de créer un journal!'
     improper-args: '&cQuantité incorrecte de paramètres!'
     wrong-enchantment-name: '&cPeut pas enchanter l''objet - enchantement inconnu!'
@@ -113,6 +120,7 @@ messages:
     enchanted: '&6Enchanter votre objet avec &b%name% %level%.'
     activated: '&6Vous avez activé l''enchantement &l&b%name%.'
     no-bleed: '&eVous ne saignez plus.'
+    wrong-parameter: '&cParamètre non valide (%param%)!'
     # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
 
   tr:
@@ -127,6 +135,7 @@ messages:
     enchanted: '&6Öğenizi &b%name% %level% ile büyüledi.'
     activated: '&6&l&b%name% büyüsünü etkinleştirdiniz.'
     no-bleed: '&eArtık kanamanız yok.'
+    wrong-parameter: '&cWrong parameter (%param%)!'
     # Credit to Kigo
 
 
