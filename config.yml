@@ -6,10 +6,24 @@ bStats: true # A boolean indicating about bStats job. Collects default bStats da
 updater: 24 # Each X hours, an updater checks for updates. Default: 24.
 
 activated: true # A boolean, indicating whether a message should be sent upon enchantment activation.
+permitScrolls: true # A boolean indicating whether to enable scrolls or not. Not used currently.
 
-permitScrolls: true # A boolean indicating whether to enable scrolls or not.
+populateVillagers: true # A boolean indicating whether to randomly enchant villagers' items or not.
+populateVillagersChance: 7 # A denominator to use when populating villagers loot. Imagine it as X in 1/X chance to populate.
+
+populateLoot: true # A boolean indicating whether to randomly populate lootchests or not.
+populateLootChance: 7 # A denominator to use when populating lootchests. Imagine it as X in 1/X chance to populate.
+
+populateFish: true # A boolean indicating whether to randomly populate fish loot or not.
+populateFishChance: 4 # A denominator to use when populating fish loot. Imagine it as X in 1/X chance to populate.
 
 lang: en # Selected from below.
+
+debugMode: false # For advanced users. Takes space on your drive. Enable at your own risk or if a support member tells you to.
+
+enchantmentLimit: 99999 # This is the amount of maximum detailedEnchantment per item.
+
+prefix: '&c&l[&r&6UnderscoreEnchants&c&l] ' # The prefix to put before each message.
 
 # This section contains the used UnderscoreEnchants.messages.
 # They are translated to English and Russian by default, but in case you want to add your own translation,
@@ -138,6 +152,20 @@ messages:
     wrong-parameter: '&cWrong parameter (%param%)!'
     # Credit to Kigo
 
+  ta:
+    no-perms: '&cஅனுமதி இல்லை!'
+    no-console: '&cநீங்கள் இதை பணியகத்திலிருந்து பயன்படுத்த முடியாது!'
+    creating-log: '&bபதிவை உருவாக்குகிறேன்...'
+    log-created: '&6பதிவு &b/plugins/UnderscoreEnchants/logfile.log/ &6என்ற கோப்புறையில் உருவாக்கப்பட்டுள்ளது.'
+    couldnt-make-log: '&cபதிவை உருவாக்க முடியவில்லை!'
+    improper-args: '&cஅளவுருக்கள் பற்றவில்லை!'
+    wrong-enchantment-name: '&cபொருளை மயக்க முடியவில்லை - மயக்கம் சரியானது அல்ல!'
+    wrong-enchantment-level: '&cபொருளை மயக்க முடியவில்லை - மயக்க நிலை 1-இற்கு கீழோ அளவுக்கு அதிகமாகவோ உள்ளது!'
+    enchanted: '&6பொருள் %name% %level% ஆல் மந்திரிக்க பட்டது.'
+    activated: '&6&l&b%name% &r&6மந்திரத்தை பயன்படுத்திவிட்டீர்கள்'
+    no-bleed: '&eஉங்களது இரத்தப்போக்கு நின்றுவிட்டது.'
+    wrong-parameter: '&cதவறான அளவுரு (%param%)!'
+
 
 armor:
   - '&7' # Leave this line as it is now, please.
@@ -151,13 +179,9 @@ tools:
   - '&7'
   - '&5Tool Enchantments'
   - '&7 '
-tridents:
-  - '&7'
-  - '&5Trident Enchantments'
-  - '&7 '
 weapons:
   - '&7'
   - '&5Weapon Enchantments'
   - '&7 '
 
-version: '1.9' # DO NOT CHANGE THIS YOURSELF!!!
+version: '2.0' # DO NOT CHANGE THIS YOURSELF!!!
