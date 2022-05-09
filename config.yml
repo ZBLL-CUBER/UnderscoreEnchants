@@ -166,22 +166,18 @@ messages:
     no-bleed: '&eஉங்களது இரத்தப்போக்கு நின்றுவிட்டது.'
     wrong-parameter: '&cதவறான அளவுரு (%param%)!'
 
+  se:
+    no-perms: '&cOtillräckliga behörigheter!'
+    no-console: '&cDu kan inte använda detta från konsolen!'
+    creating-log: '&bSkapar en logg...'
+    log-created: '&6En logg har skapats i &b/plugins/UnderscoreEnchants/logfile.log/ folder.'
+    couldnt-make-log: '&cKunde inte skapa en logg!'
+    improper-args: '&cFelaktig mängd argument!'
+    wrong-enchantment-name: '&cKunde inte enchanta föremålet - okänd enchant!'
+    wrong-enchantment-level: '&cKunde inte enchanta föremålet - dess nivå är antingen högre än maxvärdet eller mindre än 1!'
+    enchanted: '&6Enchantade ditt föremål med &b%name% %level%.'
+    activated: '&6Du har aktivetat &l&b%name% enchanten.'
+    no-bleed: '&eDu blöder inte längre.'
+    wrong-parameter: '&cFel parameter (%param%)!'
 
-armor:
-  - '&7' # Leave this line as it is now, please.
-  - '&5Armor Enchantments'
-  - '&7 '
-bows:
-  - '&7'
-  - '&5Bow Enchantments'
-  - '&7 '
-tools:
-  - '&7'
-  - '&5Tool Enchantments'
-  - '&7 '
-weapons:
-  - '&7'
-  - '&5Weapon Enchantments'
-  - '&7 '
-
-version: '2.0' # DO NOT CHANGE THIS YOURSELF!!!
+version: '2.0' # Don't change this value!
