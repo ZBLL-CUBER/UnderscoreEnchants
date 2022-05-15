@@ -21,7 +21,7 @@ lang: en # Selected from below.
 
 debugMode: false # For advanced users. Takes space on your drive. Enable at your own risk or if a support member tells you to.
 
-enchantmentLimit: 99999 # This is the amount of maximum detailedEnchantment per item.
+enchantmentLimit: 99999 # This is the amount of maximum enchantments per item.
 
 prefix: '&c&l[&r&6UnderscoreEnchants&c&l] ' # The prefix to put before each message.
 
@@ -79,18 +79,18 @@ messages:
 
   it:
     no-perms: '&cPermessi insufficienti!'
-    no-console: '&cNon si può usare da console!'
-    creating-log: '&bCreare un log...'
+    no-console: '&cNon puoi eseguirlo da console!'
+    creating-log: '&bCreando un log...'
     log-created: '&6Un log è stato creato nella cartella &b/plugins/UnderscoreEnchants/logfile.log/.'
     couldnt-make-log: '&cImpossibile creare un log!'
     improper-args: '&cQuantità impropria di parametri!'
-    wrong-enchantment-name: '&cImpossibile incantare l''oggetto - incanto sconosciuto!'
+    wrong-enchantment-name: '&cImpossibile incantare l''oggetto - incantantamento sconosciuto!'
     wrong-enchantment-level: '&cImpossibile incantare l''oggetto - il suo livello è superiore al massimo o inferiore a 1!'
     enchanted: '&6Incanta il tuo oggetto con &b%name% %level%.'
-    activated: '&6Hai attivato l''incanto &l&b%name%.'
+    activated: '&6Hai attivato l''incantamento &l&b%name%.'
     no-bleed: '&eNon stai più sanguinando.'
     wrong-parameter: '&cParametro errato (%param%)!'
-    # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
+    # Credit to Yoshiro/Yoshiro09
 
   es:
     no-perms: '&c¡Permisos insuficientes!'
