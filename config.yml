@@ -17,16 +17,16 @@ populateLootChance: 7 # A denominator to use when populating lootchests. Imagine
 populateFish: true # A boolean indicating whether to randomly populate fish loot or not.
 populateFishChance: 4 # A denominator to use when populating fish loot. Imagine it as X in 1/X chance to populate.
 
-lang: en # Selected from below.
-
 debugMode: false # For advanced users. Takes space on your drive. Enable at your own risk or if a support member tells you to.
 
 enchantmentLimit: 99999 # This is the amount of maximum enchantments per item.
 
 prefix: '&c&l[&r&6UnderscoreEnchants&c&l] ' # The prefix to put before each message.
 
-# This section contains the used UnderscoreEnchants.messages.
-# They are translated to English and Russian by default, but in case you want to add your own translation,
+lang: en # Selected from below.
+
+# This section contains the used UnderscoreEnchants messages.
+# They are translated to the following languages by default, but in case you want to add your own translation,
 # you can create your own section and translate the messages, then put the section name in the "lang" section.
 # Also, if you have translated a section, it'd be neat if you made a pull request :)
 # It helps out other foreign users, and you'll be credited in the update.
@@ -43,8 +43,9 @@ messages:
     wrong-enchantment-level: '&cCouldn''t enchant the item - its level is either higher than the maximum or less than 1!' # Called when /uenchant command has a wrong level argument.
     enchanted: '&6Enchanted your item with &b%name% %level%.' # Called after a successful /uenchant.
     activated: '&6You have activated the &l&b%name% enchantment.' # Called when an enchantment was activated. P.S. "activated" boolean (at the top) must be true for this.
-    no-bleed: '&eYou are no longer bleeding.' # Called when a player stops bleeding from Spade.
     wrong-parameter: '&cWrong parameter (%param%)!' # Called when a specific paragraph with no specific message has an improper value.
+    downloaded: '&bEnchantment &e%ench% &bhas been successfully downloaded.' # Called when an enchantment file has been downloaded.
+    loaded: '&bEnchantment &e%ench% &bhas been loaded.' # Called when an enchantment has been loaded after being downloaded.
     # Credit to ZBLL (the creator)
 
   ru:
@@ -58,8 +59,9 @@ messages:
     wrong-enchantment-level: '&cНе получилось зачаровать предмет - уровень либо превышает максимум, либо меньше чем 1!'
     enchanted: '&6Ваш предмет был зачарован на &b%name% %level%.'
     activated: '&6Вы использовали зачарование &l&b%name%.'
-    no-bleed: '&eВы больше не истекаете кровью.'
     wrong-parameter: '&cНеправильный параметр (%param%)!'
+    downloaded: '&bЗачарование &e%ench% &bбыло успешно скачано.'
+    loaded: '&bЗачарование &e%ench% &bбыло загружено.'
     # Credit to ZBLL (the creator)
 
   ro:
@@ -73,8 +75,9 @@ messages:
     wrong-enchantment-level: '&cNu s-a putut vrăji elementul - nivelul său este fie mai mare decât maxim, fie mai mic de 1!'
     enchanted: '&6V-ați vrăjit articolul cu &b%name% %level%.'
     activated: '&6Ai activat vraja &l&b%name%.'
-    no-bleed: '&eNu mai sângerezi.'
     wrong-parameter: '&cParametru greșit (%param%)!'
+    downloaded: '&bEnchantment &e%ench% &ba fost descărcat cu succes.' # DeepL
+    loaded: '&bÎncântarea &e%ench% &ba fost încărcată.' # DeepL
     # Credit to Lukedy & DeepL
 
   it:
@@ -88,24 +91,26 @@ messages:
     wrong-enchantment-level: '&cImpossibile incantare l''oggetto - il suo livello è superiore al massimo o inferiore a 1!'
     enchanted: '&6Incanta il tuo oggetto con &b%name% %level%.'
     activated: '&6Hai attivato l''incantamento &l&b%name%.'
-    no-bleed: '&eNon stai più sanguinando.'
     wrong-parameter: '&cParametro errato (%param%)!'
+    downloaded: '&bL''incantesimo &e%ench% &bè stato scaricato con successo.'
+    loaded: '&bL''incantesimo &e%ench% &bè stato caricato.'
     # Credit to Yoshiro/Yoshiro09
 
   es:
     no-perms: '&c¡Permisos insuficientes!'
-    no-console: '&c¡No se puede utilizar desde una consola!'
-    creating-log: '&bCreando un log...'
-    log-created: '&6Se ha creado un log en la carpeta &b/plugins/UnderscoreEnchants/logfile.log/.'
-    couldnt-make-log: '¡No se pudo crear un log!'
-    improper-args: '&c¡Cantidad inadecuada de parámetros!'
-    wrong-enchantment-name: '&cNo se ha podido encantar el objeto - ¡encantamiento desconocido!'
-    wrong-enchantment-level: '&cNo se ha podido encantar el objeto - ¡su nivel es superior al máximo o inferior a 1!'
-    enchanted: '&6Enchanted su artículo con &b%name% %level%.'
+    no-console: '&c¡No puedes hacer esto desde consola!'
+    creating-log: '&bCreando un registro...'
+    log-created: '&6Un registro ha sido creado en la carpeta &b/plugins/UnderscoreEnchants/logfile.log/.'
+    couldnt-make-log: '&c¡No se pudo crear el registro!'
+    improper-args: '&c¡Cantidad inapropiada de argumentos!'
+    wrong-enchantment-name: '&cNo se puedo encantar el objeto - ¡Encantamiento desconocido!'
+    wrong-enchantment-level: '&cNo se puedo encantar el objeto - ¡Su nivel es mayor al máximo o menor a 1!'
+    enchanted: '&6Encantado este objeto con &b%name% %level%.'
     activated: '&6Has activado el encantamiento &l&b%name%.'
-    no-bleed: '&eYa no estás sangrando.'
-    wrong-parameter: '&c¡Parámetro incorrecto (%param%)!'
-    # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
+    wrong-parameter: '&cParámetro inválido (%param%)!'
+    downloaded: '&bEl encantamiento &e%ench% &bha sido descargado correctamente.'
+    loaded: '&bEl encantamiento &e%ench% &bha sido cargado.'
+    # Credit to Aliakks (check out his plugins!)
 
   de:
     no-perms: '&cKeine Berechtigung!'
@@ -118,8 +123,9 @@ messages:
     wrong-enchantment-level: '&cKonnte den Gegenstand nicht verzaubern - das angegebene Level ist entweder höher als das Maximum oder kleiner als 1!'
     enchanted: '&6Dein Gegenstand wurde mit &b%Name% %level% verzaubert.'
     activated: '&6Du hast die Verzauberung &l&b%name% aktiviert.'
-    no-bleed: '&eDu blutest nicht mehr.'
     wrong-parameter: '&cUngültig Parameter (%param%)!'
+    downloaded: '&bDie Verzauberung &e%ench% &bwurde erfolgreich heruntergeladen.'
+    loaded: '&bDie Verzauberung &e%ench% &bwurde geladen.'
     # Credit to mfnalex for editing default translations!
 
   fr:
@@ -133,8 +139,9 @@ messages:
     wrong-enchantment-level: '&cPas pu enchanter l''objet - son niveau est soit supérieur au maximum, soit inférieur à 1!'
     enchanted: '&6Enchanter votre objet avec &b%name% %level%.'
     activated: '&6Vous avez activé l''enchantement &l&b%name%.'
-    no-bleed: '&eVous ne saignez plus.'
     wrong-parameter: '&cParamètre non valide (%param%)!'
+    downloaded: '&bEnchantment &e%ench% &ba été téléchargé avec succès.'
+    loaded: '&bEnchantment &e%ench% &ba été chargé.'
     # Credit to DeepL (the translation might not be 100% accurate, feel free to edit!)
 
   tr:
@@ -148,9 +155,10 @@ messages:
     wrong-enchantment-level: '&cÖğeyi büyüleyemedi - seviyesi ya maksimumdan yüksek ya da 1''den az!'
     enchanted: '&6Öğenizi &b%name% %level% ile büyüledi.'
     activated: '&6&l&b%name% büyüsünü etkinleştirdiniz.'
-    no-bleed: '&eArtık kanamanız yok.'
-    wrong-parameter: '&cWrong parameter (%param%)!'
-    # Credit to Kigo
+    wrong-parameter: '&cHatalı parametre (%param%)!'
+    downloaded: '&bBüyü &e%ench% &bbaşarıyla indirildi.'
+    loaded: '&bBüyü &e%ench% &byüklendi.'
+    # Credit to Kigo & Cazcez
 
   ta:
     no-perms: '&cஅனுமதி இல்லை!'
@@ -163,8 +171,10 @@ messages:
     wrong-enchantment-level: '&cபொருளை மயக்க முடியவில்லை - மயக்க நிலை 1-இற்கு கீழோ அளவுக்கு அதிகமாகவோ உள்ளது!'
     enchanted: '&6பொருள் %name% %level% ஆல் மந்திரிக்க பட்டது.'
     activated: '&6&l&b%name% &r&6மந்திரத்தை பயன்படுத்திவிட்டீர்கள்'
-    no-bleed: '&eஉங்களது இரத்தப்போக்கு நின்றுவிட்டது.'
     wrong-parameter: '&cதவறான அளவுரு (%param%)!'
+    downloaded: '&bEnchantment &e%ench% &bhas been successfully downloaded.'
+    loaded: '&bEnchantment &e%ench% &bhas been loaded.'
+    # Credit to Ilamparithi (THE MAN)
 
   se:
     no-perms: '&cOtillräckliga behörigheter!'
@@ -177,7 +187,9 @@ messages:
     wrong-enchantment-level: '&cKunde inte enchanta föremålet - dess nivå är antingen högre än maxvärdet eller mindre än 1!'
     enchanted: '&6Enchantade ditt föremål med &b%name% %level%.'
     activated: '&6Du har aktivetat &l&b%name% enchanten.'
-    no-bleed: '&eDu blöder inte längre.'
     wrong-parameter: '&cFel parameter (%param%)!'
+    downloaded: '&bEnchantment &e%ench% &bhas laddats ner framgångsrikt.' # DeepL
+    loaded: '&bEnchantment &e%ench% &bhar laddats.' # DeepL
+    # Credit to Yollan
 
 version: '2.0' # Don't change this value!
