@@ -172,8 +172,8 @@ messages:
     enchanted: '&6பொருள் %name% %level% ஆல் மந்திரிக்க பட்டது.'
     activated: '&6&l&b%name% &r&6மந்திரத்தை பயன்படுத்திவிட்டீர்கள்'
     wrong-parameter: '&cதவறான அளவுரு (%param%)!'
-    downloaded: '&bEnchantment &e%ench% &bhas been successfully downloaded.'
-    loaded: '&bEnchantment &e%ench% &bhas been loaded.'
+    downloaded: '&e%ench% &bமந்திரம் வெற்றிகரமாக பதிவிறக்கப்பட்டது.'
+    loaded: '&e%ench% &bமந்திரம் இப்போது செயலில் உள்ளது.'
     # Credit to Ilamparithi (THE MAN)
 
   se:
