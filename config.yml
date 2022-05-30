@@ -110,7 +110,7 @@ messages:
     wrong-parameter: '&cParámetro inválido (%param%)!'
     downloaded: '&bEl encantamiento &e%ench% &bha sido descargado correctamente.'
     loaded: '&bEl encantamiento &e%ench% &bha sido cargado.'
-    # Credit to Aliakks (check out his plugins!)
+    # Credit to Ailakks (check out his plugins!)
 
   de:
     no-perms: '&cKeine Berechtigung!'
