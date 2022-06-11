@@ -43,3 +43,18 @@
 |Norepinephrine|All levels (1-5): 100%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Adrenaline for bows.|
 |Obsidianium|All levels (1): 100%|[PLAYERMOVE](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERMOVE)|None|When moving on obsidian, get Speed and Strength for a moment.|
 |Parasite|All levels (1-3): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player for 9+ HP, get satiated and obtain Strength.|
+|Parkour|All levels (1-2): 15%|[PLAYERGOTHURT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERGOTHURT)|Level 1: 5s<br>Level 2: 7s|There's a small chance to not receive fall damage.|
+|Penetrator|Level 1-3: 20%<br>Level 4-5: 15%<br>Level 6: 17%<br>Level 9-10: 15%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Penetrate your opponent's armor.|
+|Pesceterian|All levels (1-3): 100%|[PLAYEREAT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYEREAT)|None|When eating fish, get Saturation and restore some health.|
+|Phoenix|All levels (1): 100%|[PLAYERBREAKITEM](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKITEM)|None|Upon breaking your tool, get a new one. A fresh new one.|
+|Pickpocket|Level 1: 2%<br>Level 2: 4%<br>Level 3: 6%<br>Level 4: 7%<br>Level 5: 8%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a small chance to make their jaw (and hand) drop.|
+|Poison|All levels (1): 15%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, there's a small chance to poison them.|
+|Reciprocation|Level 1: 25%<br>Level 2-3: 30%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a chance to make them slower.|
+|Reduce|Level 1: 20%<br>Level 2: 25%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon being hit, there's a chance to reduce that damage to only 30%.|
+|Rekt|Level 1: 5%<br>Level 2: 8%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon being hit, there's a chance to teleport the damager to a random place - potentionally to a suffocating one.|
+|Robber|Level 1: 2%<br>Level 2: 4<br>Level 3: 6%<br>Level 4: 8%<br>Level 5: 10%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a chance to steal the victim's hand!|
+|Saunabuffs|All levels (1): 100%|[PLAYERGOTHURT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERGOTHURT)|None|Damage in the Nether is decreased a lot.|
+|Seep|All levels (1): 100%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player who's blocking, deal 5 true damage to them.|
+|Severe|All levels (1): 1%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, there's a tiny chance to deal 11 true damage to them.|
+|Shield|All levels (1-2): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon being hit when under 4 HP, get Speed and Absorption.|
+|Stealthy|All levels (1-3): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player while sneaking, increase the dealt damage.|
