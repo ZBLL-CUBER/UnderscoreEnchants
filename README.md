@@ -58,3 +58,17 @@
 |Severe|All levels (1): 1%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, there's a tiny chance to deal 11 true damage to them.|
 |Shield|All levels (1-2): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon being hit when under 4 HP, get Speed and Absorption.|
 |Stealthy|All levels (1-3): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player while sneaking, increase the dealt damage.|
+|Stunning|All levels (1): 10%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a chance to stun them - make 'em blind, slow and tired.|
+|Suffocation|All levels (1): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a chance to spawn a bunch of sand on top of them.|
+|Swimmer|All levels (1): 100%|[PLAYERBREAKBLOCK](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK)|None|Upon breaking a block while swimming (not just being underwater), get Regeneration.|
+|Thorncover|All levels (1): 100%|[PLAYERGOTHURT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERGOTHURT)|None|Upon being damaged by thorns, just don't.|
+|Thunder|Level 1: 10%<br>Level 2: 15%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, strike a lightning on them.|
+|Toolsmith|All levels (1): 1%|[PLAYERBREAKBLOCK](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK)|60s|Upon breaking a block while sprinting, there's a chance to repair your hand.|
+|Track|All levels (1): 100%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, get their coordinates in your actionbar for some time.|
+|Trail|All levels (1-3): 100%|[PLAYERMOVE](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERMOVE)|None|Get a fancy trail behind your feet.|
+|Tuna|All levels (1): 2%|[PLAYERBREAKBLOCK](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK)|None|Upon mining a block, there's a chance to get some cod. Please cook it.|
+|Uno Reverse|All levels (1): 30%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon being shot, you might as well damage the damager by 4 HP.|
+|Vampire|All levels (1): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon killing a player, get Regeneration.|
+|Vegan|All levels (1-3): 100%|[PLAYEREAT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYEREAT)|None|Pesceterian for vegans.|
+|Wither|Level 1: 15%<br>Level 2-3: 20%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a chance to wither them.|
+P.S. Automated with this: https://onlinegdb.com/GSZ06c644
