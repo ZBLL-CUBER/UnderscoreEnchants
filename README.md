@@ -22,7 +22,14 @@
 |Doctor|All levels (1): 10%|[PLAYERBREAKBLOCK](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK)|None|Upon mining a block, there's a chance to fully regenerate all health.|
 |Drill|All levels (1): 0.1%|[PLAYERBREAKBLOCK](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK)|None|Upon mining a block, there's a very small chance to create a giant hole.|
 |Entrepreneur|All levels (1-4): 100%|[PLAYERBREAKBLOCK](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK)|None|Upon mining a block, there's a small chance to get N money, where N is the enchantment level.|
-
-
-Process finished with exit code 0
-
+|Evoker|All levels (1): 50%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, there's a chance to spawn evoker fangs on them - scary!|
+|Explosive|All levels (1): 7%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, there's a tiny chance to fake an explosion of the victim.|
+|Extrapolation|Level 1: 10%<br>Level 2-3: 15%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a chance to swiftly damage the victim three more times lightly.|
+|Firefly|All levels (1-3): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player that's on fire, deal a bit more damage to them.|
+|Ghast|All levels (1): 100%|[PLAYERSHOOTBOW](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERSHOOTBOW)|None|Upon shooting the bow, shoot a fireball along with the arrow!|
+|Godmode|All levels (1): 5%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a tiny chance to become invulnerable for a certain period of time (random: 1-3 seconds).|
+|Goldenfish|Level 1: 8%<br>Level 2-3: 10%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, there's a chance to spawn a VERY strong silverfish on them.|
+|Grinder|Level 1: 5%<br>Level 2-3: 8%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a chance to increase your XP and decrease theirs.|
+|Guardian Angel|All levels (1): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|10m|When about to die, get teleported to your bed location, clear your debuffs and regenerate in peace.|
+|Gun|All levels (1): 100%|[PLAYERINTERACT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERINTERACT)|10s|Click this hoe and shoot an arrow.|
+|Hocus Pocus|Level 1-8: level%<br>Level 9: 3%<br>Level 10: 1%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, shuffle their hotbar... or their entire inventory!|
