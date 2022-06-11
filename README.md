@@ -33,3 +33,13 @@
 |Guardian Angel|All levels (1): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|10m|When about to die, get teleported to your bed location, clear your debuffs and regenerate in peace.|
 |Gun|All levels (1): 100%|[PLAYERINTERACT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERINTERACT)|10s|Click this hoe and shoot an arrow.|
 |Hocus Pocus|Level 1-8: level%<br>Level 9: 3%<br>Level 10: 1%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, shuffle their hotbar... or their entire inventory!|
+|Last Chance|All levels (1): 40%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon almost receiving lethal damage, you might get one more chance to escape by getting Speed and negating the received damage.|
+|Lifesteal|Level 1: 15%<br>Level 2: 20%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, you might steal some of their health.|
+|Lightning|Level 1: 17%<br>Level 2: 20%<br>Level 3: 22%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Upon shooting a player, a lightning might strike the poor dude.|
+|Lottery|All levels (1): 1%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player, there's a tiny chance to kill them but set yourself on 3 hearts (6 HP).|
+|Lucky|Level 1: 5%<br>Level 2: 7%<br>Level 3: 5%|[PLAYERBREAKBLOCK](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBREAKBLOCK)|None|Upon mining coal ore, you might strike gold! Literally.|
+|Martyrdom|All levels (1): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon dying, spawn a TNT on your grave.|
+|Ninja|All levels (1): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon killing a player, get Speed and Jump Boost.|
+|Norepinephrine|All levels (1-5): 100%|[PLAYERBOWHIT](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERBOWHIT)|None|Adrenaline for bows.|
+|Obsidianium|All levels (1): 100%|[PLAYERMOVE](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERMOVE)|None|When moving on obsidian, get Speed and Strength for a moment.|
+|Parasite|All levels (1-3): 100%|[PLAYERHITPLAYER](https://github.com/ZBLL-CUBER/UnderscoreEnchants/wiki/Trigger-PLAYERHITPLAYER)|None|Upon hitting a player for 9+ HP, get satiated and obtain Strength.|
